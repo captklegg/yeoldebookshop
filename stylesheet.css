@@ -1,0 +1,251 @@
+/* You need to add CSS to the BOTTOM of this stylesheet. */
+
+
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+/* LAYOUT */
+
+nav, header, main, aside, footer {
+    padding: 1em;
+}
+
+figure {
+    margin-bottom: 1em;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Monteserrat, serif;
+    color: #444;
+    line-height: 1.5;
+}
+
+h1, h2, h3, nav, footer, figcaption {
+    font-family: Monteserrat, "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+nav {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+aside {
+    text-align: center;
+}
+
+
+/* COLOUR SCHEME & BORDERS */
+
+header, footer {
+    background-color: #ffffff;
+    color: #b0ab9b;
+}
+
+nav, aside {
+    background-color: #395723;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+footer a {
+    color: #b0ab9b;
+}
+
+.selected, a:hover {
+    color: #cccccc;
+}
+
+
+/* NAVIGATION */
+
+nav ul, footer ul {
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0 0.8rem;
+}
+
+footer li {
+    margin: 0 1em;
+}
+
+nav a, footer a {
+    text-decoration: none;
+}
+
+
+/* IMAGES & VIDEOS */
+
+img {
+    width: 100%;
+}
+
+
+
+/* RESPONSIVENESS */
+/* by Jason Andrews */
+
+@media screen and (min-width: 56em) {
+	
+	/* For screen resolutions from 56em wide  */
+    
+    body {
+        /* Create the grid with two central content columns and flexible (but equal)
+        white space columns on either side. */
+        display: grid;
+        grid-template-columns: 1fr 14rem 28rem 14rem 1fr;
+    }
+
+    header, footer {
+     /* The header and footer span both content columns. */
+        grid-column: 1 / 6;
+    }
+
+    header {
+		/* Flex header conatining the image and title. */
+		display: flex;
+		align-items: center;
+    }
+
+
+	/* Image container */
+    header > figure {
+		width: 15.625em;
+		margin: 0;
+    }
+	
+    nav {
+        grid-column: 2 / 3;
+		grid-row: 2 / 4;
+    }
+    
+    nav ul {
+		display: flex;
+		justify-content: center;
+    }
+
+    main {
+        grid-column: 3 / 5;
+		grid-row: 3 / 4;
+    }
+ 
+    aside {
+        display: flex;
+		grid-column: 3 / 5;
+		grid-row: 2 /3;
+    }
+	
+	figure {
+		padding: 1rem;
+		width: 100%;
+	}
+		
+
+    footer ul {
+		display: flex;
+		justify-content: center;
+    }
+	
+	/* COLOURS */
+	aside {
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 75em) {
+	
+    /* For screen resolutions 75em and beyond  */
+	
+    body {
+        /* Create the grid with two central content columns and flexible (but equal)
+        white space columns on either side. */
+        display: grid;
+        grid-template-columns: 1fr 16rem 45rem 16rem 1fr;
+    }
+    
+    nav {
+        grid-column: 1 / 6;
+		grid-row: 1 / 2;        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        display: flex;
+    }
+	
+
+    header, footer {
+     /* The header and footer span both content columns. */
+        grid-column: 1 / 6;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+	
+	header > figure {
+		width: 15.625em;
+		height: 154px;
+		margin: 0;
+        grid-row: 2 / 3;
+    }	
+
+    
+	main {
+        grid-column: 2 / 5;
+		grid-row: 3 / 4;
+    }
+ 
+    aside {
+        display: grid;
+		grid-column: 4 / 5;
+		grid-row: 2 /5;
+    }
+ 
+    figure {
+		padding: 0;
+		width: 100%;
+	}
+
+    footer ul {
+    	justify-content: center;
+		display: flex;
+    }
+	
+	/* COLOURS */
+	aside {
+        background-color: #c4c4c4;
+    }
+}
+

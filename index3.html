@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ye Olde Bookshop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles2.css">
+    <!-- Menu code sourced and modified from W3 Schools -->
+    <link rel="stylesheet" href="assets/menu.css">
+    <!-- Google Monteserrat font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monteserrat">
+    <!-- Code for the hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicons generated at https://favicon.io/favicon-converter/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="buy.html">We Buy Books</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>    
+    
+    <header>
+		<div class="row">
+            <div class="header-search">
+                <div class="search">
+					<input type="text" placeholder="Search..">
+				</div>
+            </div>
+            <div class="header-logo">
+                <div class="logo">
+                    <img src="images/YeOldeBookshop.png" alt="Ye Olde Bookshop">
+                </div>
+            </div>
+            <div class="header-social">
+                <div class="social-icon">
+                    <img src="images/instagram.png" alt="Instagram">
+                </div>
+                <div class="social-icon">
+                    <img src="images/twitter.png" alt="Twitter">
+                </div>
+				<div class="social-icon">
+                    <a href="https://www.goodreads.com" title="Goodreads"><img src="images/goodreads.png" alt="Goodreads"></a>
+                </div>				
+            </div>
+        </div>
+    </header>
+
+    <main>   
+		<div>
+			<h2>First editions just in</h2>
+		</div>	
+		<div class="scrollmenu">
+		  <img class="book-cover" src="images/books/asimov.jpg">
+		  <img class="book-cover" src="images/books/drno.jpg">
+		  <img class="book-cover" src="images/books/seuss.jpg">
+		  <img class="book-cover" src="images/books/jaws.jpg">
+		  <img class="book-cover" src="images/books/machiavelli.jpg">
+		  <img class="book-cover" src="images/books/syn.jpg">
+		  <img class="book-cover" src="images/books/bell-tolls.jpg">
+		  <img class="book-cover" src="images/books/hitchhikers.jpg">
+		  <img class="book-cover" src="images/books/Harry-Potter.jpg">
+		  <img class="book-cover" src="images/books/salems.jpg">
+		</div>
+    </main>
+	
+	<aside>
+		<h2 class="aside">Latest News</h2>
+		<div class="aside-dash"></div>
+		<div class="aside-item">
+			<div>
+				<img class="aside-image" src="images/books/the-lagoon.png">
+			</div>
+			<div class="aside-padding">
+				<h3 class="aside">Author Reading</h3>
+				<p>Shelley MacNabb will visit <i>Ye Olde Bookshopread</i> to read her new romance novel "The Lagoon". There will also be a book signing, and tea and scones.</p>
+				<p>October 27th, 7:30 pm</p>
+			</div>
+		</div>
+		<p>Text</p>
+	</aside>
+    
+    <footer>
+        <ul>
+            <li><a href="placeholder.html">1</a></li>
+            <li><a href="placeholder.html">2</a></li>
+            <li><a href="placeholder.html">3</a></li>
+        </ul>
+    </footer>
+    
+    <!-- Menu script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    
+</body>
+</html>
