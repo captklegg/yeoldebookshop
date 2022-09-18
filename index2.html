@@ -3,7 +3,7 @@
 <head>
     <title>Ye Olde Bookshop</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <!-- Menu code sourced and modified from W3 Schools -->
     <link rel="stylesheet" href="assets/menu.css">
     <!-- Google Monteserrat font -->
@@ -90,17 +90,35 @@
         </div>
         
         <div class="front-page-item">    
-            <div id="slideshow">
-                <div>
-                    <a href="book-of-the-month.html" title="Book of the month"><img src="images/book-of-the-month.jpg"></a>
-                </div>
-                <div>
-                    <a href="book-resortations.html" title="Book restorations"><img src="images/book-restoration.jpg"></a>
-                </div>
-                <div>
-                    <a href="book-evaluations.html" title="Book evaluations"><img src="images/valuations.jpg"></a>
-                </div>
-            </div>
+
+                <section> 
+                <!-- Slider -->
+                    <div id="slider">
+                        <div class="slides">
+                            <div class="slider">
+                                <div class="image">
+                                    <img src="images/book-of-the-month.jpg">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="image">
+                                    <img src="images/book-restoration.jpg">
+                                </div>
+                            </div>
+                            <div class="slider">                
+                                <div class="image">
+                                    <img src="images/valuations.jpg">
+                                </div>
+                            </div>
+                            <div class="slider">                
+                                <div class="image">
+                                    <img src="images/valuations.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
         </div>
     </main>
 	
@@ -183,19 +201,6 @@
             }
         }
     </script>
-    
-    <!-- Carousel script from https://codepen.io/chriscoyier/pen/zKbYzP -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>
-        $("#slideshow > div:gt(0)").hide();
-        setInterval(function () {
-          $("#slideshow > div:first")
-            .fadeOut(1000)
-            .next()
-            .fadeIn(1000)
-            .end()
-            .appendTo("#slideshow");
-        }, 6000);
-    </script>
+
 </body>
 </html>
