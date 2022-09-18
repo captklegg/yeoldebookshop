@@ -90,15 +90,15 @@
             <h3 class="see-more"><a href="new_arrivals.html">See more</a></h3>
             <div class="item-border"></div>
         </div>
-        <div class="front-page-item">
-            <div>
-              <img src="images/book-of-the-month.jpg" alt="Book of the month">
+        <div class="front-page-item">    
+            <div id="slideshow">
+                <div>
+                    <a href="book-of-the-month.html" title="Book of the month"><img src="images/book-of-the-month.jpg"></a>
+                </div>
+                <div>
+                    <a href="book-resortations.html" title="Book restorations"><img src="images/book-restoration.jpg"></a>
+                </div>
             </div>
-            <div>
-            <div class="flex-arrivals-container">
-              <img src="images/book-restoration.jpg">
-            </div>
-
         </div>
     </main>
 	
@@ -159,7 +159,7 @@
         </ul>
     </footer>
     
-    <!-- Menu script -->
+    <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -169,6 +169,20 @@
                 x.className = "topnav";
             }
         }
+    </script>
+    
+    <!-- Carousel script from https://codepen.io/chriscoyier/pen/zKbYzP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+        setInterval(function () {
+          $("#slideshow > div:first")
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo("#slideshow");
+        }, 6000);
     </script>
 </body>
 </html>

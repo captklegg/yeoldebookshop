@@ -686,7 +686,7 @@ img {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 15px;
+  padding: 15 20pxpx;
   margin: 10px;
   width: 50px;
   height: 50px;
@@ -757,4 +757,19 @@ img {
 .wrapper .youtube:hover .tooltip::before {
   background: #CD201F;
   color: #ffffff;
+}
+
+#slideshow {
+  margin: 1em auto;
+  position: relative;
+  width: 100%;
+  height: 272px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
