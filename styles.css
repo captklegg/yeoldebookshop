@@ -21,7 +21,7 @@ nav, main, aside, footer {
 header {
   background-image: url("images/bookshelf.jpg");
   margin: 0;
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 
 nav {
