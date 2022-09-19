@@ -3,10 +3,19 @@
 <head>
     <title>Ye Olde Bookshop</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Meta tags generated at https://www.seoptimer.com/meta-tag-generator -->
+    <meta name="title" content="Ye Olde Booshop">
+    <meta name="description" content="Ye Olde Bookshop is an independently owned bookshop in Christchurch. Specialists in rare and first edition books, and book restorations.">
+    <meta name="keywords" content="used books, old books, first edition books, rare books, book restorations, christchurch, new zealand, book of the month, classic books,independent bookshop, book valuations">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Julia Appleby ">
     <!-- Menu code sourced and modified from W3 Schools -->
-    <link rel="stylesheet" href="assets/menu.css">
-    <!-- Google Monteserrat font -->
+    <link rel="stylesheet" href="assets/outside-styles.css">
+    <!-- Google Monteserrat and Forum fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monteserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
     <!-- Code for the hamburger menu -->
@@ -22,16 +31,14 @@
     <nav>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="contact.html">New Arrivals</a>
-            <a href="buy.html">Book of the Month</a>            
-            <a href="about.html">Restorations</a>
-            <a href="about.html">Showcase</a>
-            <a href="about.html">Valuations</a>
-            <a href="about.html">Contact Form</a>
-            <a href="about.html">About Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <a href="contact.html" class="sub-link">New Arrivals</a>
+            <a href="buy.html" class="sub-link">Book of the Month</a>            
+            <a href="about.html" class="sub-link">Restorations</a>
+            <a href="about.html" class="sub-link">Showcase</a>
+            <a href="about.html" class="sub-link">Valuations</a>
+            <a href="about.html" class="sub-link">Contact Form</a>
+            <a href="about.html" class="sub-link">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
     </nav>    
     
@@ -49,18 +56,18 @@
             </div>
             <div class="header-social">
                 <ul class="wrapper">
-                <li class="icon twitter">
-                  <span class="tooltip">Twitter</span>
-                  <span><i class="fa fa-twitter"></i></span>
-                </li>
-                <li class="icon instagram">
-                  <span class="tooltip">Instagram</span>
-                  <span><i class="fa fa-instagram"></i></span>
-                </li>
-                 <li class="icon youtube">
-                    <span class="tooltip">Youtube</span>
-                    <span><i class="fa fa-youtube"></i></span>
-                 </li>
+                    <li class="icon twitter">
+                      <span class="tooltip">Twitter</span>
+                      <span><i class="fa fa-twitter"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                      <span class="tooltip">Instagram</span>
+                      <span><i class="fa fa-instagram"></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fa fa-youtube"></i></span>
+                    </li>
               </ul>				
             </div>
         </div>
@@ -89,16 +96,29 @@
             <div class="item-border"></div>
         </div>
         
-        <div class="front-page-item">    
-            <div id="slideshow">
-                <div>
-                    <a href="book-of-the-month.html" title="Book of the month"><img src="images/book-of-the-month.jpg"></a>
+        <div class="front-page-item"> 
+        <!-- Slider -->
+        <div id="slider">
+            <div class="slides">
+                <div class="slider">
+                    <div class="image">
+                        <a href="book-of-the-month.html"><img src="images/book-of-the-month.jpg"></a>
+                    </div>
                 </div>
-                <div>
-                    <a href="book-resortations.html" title="Book restorations"><img src="images/book-restoration.jpg"></a>
+                <div class="slider">
+                    <div class="image">
+                        <a href="book-restorations.html"><img src="images/book-restoration.jpg"></a>
+                    </div>
                 </div>
-                <div>
-                    <a href="book-evaluations.html" title="Book evaluations"><img src="images/valuations.jpg"></a>
+                <div class="slider">                
+                    <div class="image">
+                        <a href="valuations.html"><img src="images/valuations.jpg"></a>
+                    </div>
+                </div>
+                <div class="slider">                
+                    <div class="image">
+                        <img src="images/showcase.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,7 +189,7 @@
     </aside>
     
     <footer>
-        <p class="small">© Copyright 2022 Ye Olde Bookshop / Privacy Policy</p>
+        <p class="small">© Copyright 2022 Ye Olde Bookshop</p>
     </footer>
     
     <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
@@ -183,19 +203,6 @@
             }
         }
     </script>
-    
-    <!-- Carousel script from https://codepen.io/chriscoyier/pen/zKbYzP -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>
-        $("#slideshow > div:gt(0)").hide();
-        setInterval(function () {
-          $("#slideshow > div:first")
-            .fadeOut(1000)
-            .next()
-            .fadeIn(1000)
-            .end()
-            .appendTo("#slideshow");
-        }, 6000);
-    </script>
+
 </body>
 </html>

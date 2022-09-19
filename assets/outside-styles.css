@@ -1,0 +1,468 @@
+.topnav {
+  overflow: hidden;
+  z-index: 99;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: #c30000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a {  
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 960px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sub-link {
+    line-height: 2.4em;
+  }
+}
+
+/* The following code is from https://codepen.io/yassinedoghri/pen/QWpwoxp */
+/* Read more */
+.read-more {
+  --line-clamp: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.read-more__text {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more__checkbox {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.read-more__checkbox ~ .read-more__label {
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Don't forget focus and hover styles for accessibility! */
+.read-more__checkbox:focus ~ .read-more__label {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.read-more__checkbox:hover ~ .read-more__label {
+  text-decoration: none;
+}
+
+.read-more__checkbox ~ .read-more__label::before {
+  content: attr(data-read-more);
+}
+
+.read-more__checkbox:checked ~ .read-more__label::before {
+  content: attr(data-read-less);
+}
+
+.read-more__checkbox:checked ~ .read-more__text {
+  --line-clamp: none;
+  -webkit-line-clamp: var(--line-clamp);
+}
+
+/* The following code is from https://codepen.io/yassinedoghri/pen/QWpwoxp */
+/* Read more */
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -37px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: grid;
+  font-size: 16px;
+  margin: 4px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #3C5725; 
+  color: white; 
+  border: 2px solid #3C5725;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #3C5725;
+}
+
+
+
+
+/* Slider from https://codeconvey.com/Tutorials/AutoplayCSSSlideshow/ */
+#slider{
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  z-index: 1;
+}
+@keyframes load{
+  from{left:-100%;}
+  to{left:0;}
+}
+.slides{
+  width:400%;
+  height:100%;
+  position:relative;
+  -webkit-animation:slide 30s infinite;
+  -moz-animation:slide 30s infinite;
+  animation:slide 30s infinite;
+}
+.slider{
+  width:25%;
+  height:100%;
+  float:left;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+}
+.slide img{
+  width:100%;
+  height:100%;
+}
+.slide img{
+  width:100%;
+  height:100%;
+}
+.image {
+  width:100%;
+  height:100%;
+}
+.image img{
+  width:100%;
+  height:100%;
+}
+
+
+
+/* Animation */
+@-webkit-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+@-moz-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+@keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+
+@-webkit-keyframes content-s{
+  0%{left:-420px;}
+  10%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+@-moz-keyframes content-s{
+  0%{left:-420px;}
+  10%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+@keyframes content-s{
+  0%{left:-420px;}
+  10%{left:20px;}
+  15%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+
+@-webkit-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
+
+@-moz-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
+
+@keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
