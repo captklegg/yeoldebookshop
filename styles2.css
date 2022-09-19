@@ -391,6 +391,7 @@ img {
   nav {
     grid-column: 1 / 6;
 		grid-row: 1 / 2;
+    z-index: 99;
   }
 
   header, footer {

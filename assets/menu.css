@@ -1,6 +1,6 @@
 .topnav {
   overflow: hidden;
-  z-index: 10;
+  z-index: 99;
 }
 
 .topnav a {
