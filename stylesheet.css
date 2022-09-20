@@ -312,6 +312,15 @@ img {
     grid-column: 1 / 6;
     grid-row: 1 / 2;
   }
+  
+  header, footer {
+  /* The header and footer span both content columns. */
+  grid-column: 1 / 6;
+    align-items: center;
+    display: flex;		
+    flex-wrap: wrap;
+    justify-content: center;
+  }
     
 	.row {
     flex-direction: column;
@@ -392,15 +401,6 @@ img {
     grid-column: 1 / 6;
 		grid-row: 1 / 2;
     z-index: 99;
-  }
-
-  header, footer {
-  /* The header and footer span both content columns. */
-    grid-column: 1 / 6;
-    align-items: center;
-    display: flex;		
-    flex-wrap: wrap;
-    justify-content: center;
   }
 	
 	header {
@@ -483,15 +483,6 @@ img {
      grid-row: 1 / 2;
      align-items: center;
      display: flex;
-     justify-content: center;
-    }
-
-    header, footer {
-     /* The header and footer span both content columns. */
-     grid-column: 1 / 6;
-     align-items: center;
-     display: flex;		
-     flex-wrap: wrap;
      justify-content: center;
     }
 	

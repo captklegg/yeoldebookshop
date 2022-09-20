@@ -1,3 +1,5 @@
+/* Responsive nav menu from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
+/* Modified */
 .topnav {
   overflow: hidden;
   z-index: 99;
@@ -54,8 +56,8 @@
   }
 }
 
-/* The following code is from https://codepen.io/yassinedoghri/pen/QWpwoxp */
-/* Read more */
+/* Read more code from https://codepen.io/yassinedoghri/pen/QWpwoxp */
+/* Unmodified */
 .read-more {
   --line-clamp: 3;
 
@@ -110,8 +112,8 @@
   -webkit-line-clamp: var(--line-clamp);
 }
 
-/* The following code is from https://codepen.io/yassinedoghri/pen/QWpwoxp */
-/* Read more */
+/* Social icon tooltips from https://codepen.io/yassinedoghri/pen/QWpwoxp */
+/* Modified */
 
 .wrapper {
   display: inline-flex;
@@ -220,9 +222,9 @@
 }
 
 
-
-
 /* Slider from https://codeconvey.com/Tutorials/AutoplayCSSSlideshow/ */
+/* Modified */
+
 #slider{
   width:100%;
   position:relative;
