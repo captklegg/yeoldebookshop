@@ -315,7 +315,7 @@ img {
   
   header, footer {
   /* The header and footer span both content columns. */
-  grid-column: 1 / 6;
+    grid-column: 1 / 6;
     align-items: center;
     display: flex;		
     flex-wrap: wrap;
@@ -401,6 +401,15 @@ img {
     grid-column: 1 / 6;
 		grid-row: 1 / 2;
     z-index: 99;
+  }
+  
+    header, footer {
+    /* The header and footer span both content columns. */
+    grid-column: 1 / 6;
+    align-items: center;
+    display: flex;		
+    flex-wrap: wrap;
+    justify-content: center;
   }
 	
 	header {
