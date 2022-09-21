@@ -85,7 +85,7 @@
 
 .read-more__checkbox ~ .read-more__label {
   cursor: pointer;
-  font-size: 0.75em;
+  font-size: 0.9em;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -467,4 +467,36 @@
   96%{
     margin-left:45px;
   }
+}
+
+/* Slider from https://codepen.io/gfcf14/pen/qBEMWJe */
+/* Modified colours only */
+.scroll-top {
+  background: #3C5725;
+  border: 0;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 15px;
+  opacity: 0.75;
+  position: fixed;
+  right: -70px;
+  transition: right 0.2s ease-in-out;
+  width: 50px;
+  z-index: 99;
+}
+.scroll-top.visible {
+  right: 0;
+}
+
+.arrow {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px;
+}
+.arrow.up {  
+  transform: rotate(-135deg);
 }
