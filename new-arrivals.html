@@ -3,7 +3,11 @@
 <head>
     <title>Ye Olde Bookshop | Used and First Edition Books</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="stylesheet.css">
+	
+    <!-- CSS code from other sources -->
+    <link rel="stylesheet" href="outside-styles.css">
+	
     <!-- Meta tags generated at https://www.seoptimer.com/meta-tag-generator -->
     <meta name="title" content="Ye Olde Booshop">
     <meta name="description" content="Ye Olde Bookshop is an independently owned bookshop in Christchurch. Specialists in rare and first edition books, and book restorations.">
@@ -13,25 +17,26 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="Julia Appleby ">
-    <!-- Menu code sourced and modified from W3 Schools -->
-    <link rel="stylesheet" href="assets/outside-styles.css">
+	
     <!-- Google Monteserrat and Forum fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monteserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+	
     <!-- Code for the hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
     <!-- Favicons generated at https://favicon.io/favicon-converter/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    
+    <link rel="manifest" href="images/favicon/site.webmanifest">    
 </head>
+
 <body>
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="contact.html" class="sub-link">New Arrivals</a>
+            <a href="index.html">Home</a>
+            <a href="new-arrivals.html"  class="active">New Arrivals</a>
             <a href="buy.html" class="sub-link">Book of the Month</a>            
             <a href="about.html" class="sub-link">Restorations</a>
             <a href="about.html" class="sub-link">Showcase</a>
@@ -75,18 +80,13 @@
 
     <main>
         <div class="front-page-item">
-            <h1>Welcome</h1>
+            <h1>New Arrivals</h1>
             <div class="dash"></div>
-              <p>Ye Olde Bookshop is an independently owned bookshop in Christchurch. We specialise in used books and are well known in New Zealand and overseas
-              for our large selection of rare and first edition books. We are also experts in book restorations. If there is a book you are looking for, or you need a
-              book lovingly restored, please get in touch.</p>
-              <button class="button button1">Contact Us</button>
+              <p>Browse a selection of used books that have just come in. If you see something you like, please drop by or <a href="contact.html" title="Contact us">contact us</a>.</p>
             <div class="item-border"></div>
         </div>
         
         <div class="front-page-item">
-            <h2>New Arrivals</h2>
-            <div class="dash"></div>
             <div class="flex-arrivals-container">
               <img class="book-cover" src="images/books/asimov.jpg">
               <img class="book-cover" src="images/books/drno.jpg">
@@ -95,33 +95,7 @@
             <h3 class="see-more"><a href="new_arrivals.html">See more</a></h3>
             <div class="item-border"></div>
         </div>
-        
-        <div class="front-page-item"> 
-        <!-- Slider -->
-        <div id="slider">
-            <div class="slides">
-                <div class="slider">
-                    <div class="image">
-                        <a href="book-of-the-month.html"><img src="images/book-of-the-month.jpg"></a>
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="image">
-                        <a href="book-restorations.html"><img src="images/book-restoration.jpg"></a>
-                    </div>
-                </div>
-                <div class="slider">                
-                    <div class="image">
-                        <a href="valuations.html"><img src="images/valuations.jpg"></a>
-                    </div>
-                </div>
-                <div class="slider">                
-                    <div class="image">
-                        <img src="images/showcase.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
+		
     </main>
 	
 	<aside>
@@ -129,6 +103,8 @@
             <h2 class="aside">Latest News</h2>		
             <div class="dash"></div>
         </div>
+		
+		<!-- Aside item -->
 		<div class="aside-item">
 			<div class="aside-item-image">
 				<img class="aside-image" src="images/books/lagoon.jpg">
@@ -143,6 +119,8 @@
                 </div>
 			</div>
 		</div>
+		
+		<!-- Aside item -->
 		<div class="aside-item">
 			<div class="aside-item-image">
 				<img class="aside-item-image" src="images/books/soup-diaries.jpg">
@@ -157,6 +135,8 @@
                 </div>
 			</div>
 		</div>
+		
+		<!-- Aside item -->
         <div class="aside-item">
 			<div class="aside-item-image">
 				<img class="aside-item-image" src="images/books/casino-girl.jpg">
@@ -171,7 +151,8 @@
                 </div>
             </div>
 		 </div>
-            
+		 
+        <!-- Aside end -->   
         <div class="aside-title">
             <h2 class="aside-lower-title">Where to Find Us</h2>		
             <div class="dash"></div>
@@ -187,14 +168,16 @@
 			</div>
 		</div>
     </aside>
-	
-	<button class="scroll-top">
-  <div class="arrow up"></div>
-</button>
     
     <footer>
         <p class="small">© Copyright 2022 Ye Olde Bookshop</p>
     </footer>
+	
+	<!-- Scroll to top button -->
+	<script src="js/scroll-to-top.js"></script>
+	<button class="scroll-top">
+		<div class="arrow up"></div>
+	</button>
     
     <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
     <script>
@@ -207,94 +190,7 @@
             }
         }
     </script>
-	
-	<script>
-	const colorMax = 192;
 
-	// gets the breakpoint at which the scroll-to-top button should appear
-	const scrollBreakpoint = window.innerHeight * 0.5;
-
-	document.addEventListener('DOMContentLoaded', () => {
-	  randomizeBackgrounds();
-	  setupScrollListener();
-	  setupScrollEvent();  
-	});
-
-	// scrolls window to top
-	function setupScrollEvent() {
-	  const scrollButton = document.querySelector('.scroll-top');
-	  
-	  scrollButton.addEventListener('click', (e) => {
-		// not the best solution until Safari/Edge support scroll behavior
-		// window.scrollTo({ top: 0, behavior: 'smooth' });
-		
-		// Thanks to Geroge Daniel https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
-		smoothVerticalScrolling(scrollButton.parentElement, 250, "top");
-	  });
-	}
-
-	// prepares the window for a scroll event to show the scroll button
-	function setupScrollListener() {  
-	   window.addEventListener('scroll', (e) => {
-		 const scrollButton = document.querySelector('.scroll-top');
-		 
-		 // const scrollOffset = document.scrollingElement.scrollTop;
-		 const scrollOffset = window.scrollY;
-		
-		 if (scrollOffset >= scrollBreakpoint) {
-		   scrollButton.classList.add('visible');
-		 } else if (scrollOffset <= 0) {
-		   scrollButton.classList.remove('visible');
-		 }    
-	  });
-	}
-
-	function randomizeBackgrounds() {
-	  // get all the content containers
-	  const contentContainers = document.querySelectorAll('.content-container');
-	  
-	  [].forEach.call(contentContainers, container => {
-		// assign random background
-		container.style.background = `rgb(${randVal(colorMax)},${randVal(colorMax)},${randVal(colorMax)})`;
-	  });
-	}
-
-	// random between 0 to max
-	function randVal(max) {
-	  return Math.floor(Math.random() * Math.floor(max));
-	}
-
-	// uses a timeout to scroll to top
-	function smoothVerticalScrolling(e, time, where) {
-	  // gets the element's top position relative to the viewport
-	  const eTop = e.getBoundingClientRect().top;
-	  
-	  // divides the top offset into 100 steps to be ellapsed
-	  const eAmt = eTop / 100;
-	  
-	  // starting time
-	  let curTime = 0;
-	  
-	  // not to exceed the desired duration
-	  while (curTime <= time) {
-		// call a function to execute at one hundreth of the desired scroll time
-		window.setTimeout(SVS_B, curTime, eAmt, where);
-		// increase by one hundreth of the desired time to execute exactly 100 times
-		curTime += time / 100;
-	  }
-	}
-
-	function SVS_B(eAmt, where) {
-	  // scroll by half the hundredth of the top offset if destination is not top (since to center only involves scrolling either in the top or bottom half of the window)
-	  if(where == "center" || where == "") {
-		window.scrollBy(0, eAmt / 2); 
-	  }
-	  // otherwise scroll the full amount
-	  if (where == "top") {
-		window.scrollBy(0, eAmt);
-	  }    
-	}
-	</script>
 
 </body>
 </html>
