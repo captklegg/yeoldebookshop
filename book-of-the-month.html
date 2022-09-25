@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ye Olde Bookshop | Book of the Month</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+	
+    <!-- CSS code from other sources -->
+    <link rel="stylesheet" href="outside-styles.css">
+	
+    <!-- Meta tags generated at https://www.seoptimer.com/meta-tag-generator -->
+    <meta name="title" content="Ye Olde Booshop">
+    <meta name="description" content="Ye Olde Bookshop is an independently owned bookshop in Christchurch. Specialists in rare and first edition books, and book restorations.">
+    <meta name="keywords" content="used books, old books, first edition books, rare books, book restorations, christchurch, new zealand, book of the month, classic books,independent bookshop, book valuations">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Julia Appleby ">
+	
+    <!-- Google Monteserrat and Forum fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monteserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+	
+    <!-- Code for the hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <!-- Favicons generated at https://favicon.io/favicon-converter/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">    
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"class="nav-link">Home</a>
+            <a href="new-arrivals.html"  class="nav-link active">New Arrivals</a>
+            <a href="buy.html" class="nav-link">Book of the Month</a>            
+            <a href="about.html" class="nav-link">Restorations</a>
+            <a href="about.html" class="nav-link">Valuations</a>
+            <a href="about.html" class="nav-link">Contact Form</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>    
+    
+    <header>
+		<div class="row">
+            <div class="header-search">
+                <div class="search">
+					<input type="text" placeholder="Search..">
+				</div>
+            </div>
+            <div class="header-logo">
+                <div class="logo">
+                    <img src="images/YeOldeBookshop.png" alt="Ye Olde Bookshop">
+                </div>
+            </div>
+            <div class="header-social">
+                <ul class="wrapper">
+                    <li class="icon twitter">
+                      <span class="tooltip">Twitter</span>
+                      <span><i class="fa fa-twitter"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                      <span class="tooltip">Instagram</span>
+                      <span><i class="fa fa-instagram"></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fa fa-youtube"></i></span>
+                    </li>
+              </ul>				
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="front-page-item">
+            <h1>Book of the Month</h1>
+            <div class="dash"></div>
+              <p>This month's book is "The Old Man and the Sea" by the American author, Ernest Hemingway. Read below for our review of this classic novella.</p>
+            <div class="item-border"></div>
+			<div class="flex-flipcard-container">
+				<div class="scene scene--card">
+				  <div class="card">
+					<div class="card__face card__face--front">
+						<figure>
+							<img src="images/books/the-old-man-and-the-sea-cover.jpg" alt="The Old Man and the Sea book cover">
+						</figure>
+					</div>
+					<div class="card__face card__face--back">
+						<figure>
+							<img src="images/books/the-old-man-and-the-sea-back.jpg" alt="The Old Man and the Sea book rear cover">
+						</figure>
+					</div>
+				</div>
+				<figcaption>Click to see the rear cover</figcaption>
+			</div>
+		</div>
+        </div>
+		
+		
+		
+    </main>
+	
+	<aside>
+        <div class="aside-title">
+            <h2 class="aside">About the Author</h2>		
+            <div class="dash"></div>
+        </div>
+		<figure id="author">
+			<img src="images/hemingway.jpg" alt="Ernest Hemingway portrait">
+		</figure>
+		<figcaption>Ernest Hemingway</figcaption>
+		
+		<!-- Aside text -->
+		<p>Ernest Miller Hemingway was born on July 21, in Cicero, Illinois, and died on July 2, 1961.</p>
+		<p>He was a novelist and short-story writer, and was awarded the Nobel Prize for Literature in 1954.</p>
+		<p>He was noted for the strong masculinity of his writing and for his adventurous and widely publicised life.</p>
+		<p>His writing style had a strong influence on American and British fiction in the 20th century.</p>
+    </aside>
+    
+    <footer>
+        <p class="small">© Copyright 2022 Ye Olde Bookshop</p>
+    </footer>
+	
+	<!-- Scroll to top button -->
+	<script src="js/scroll-to-top.js"></script>
+	<button class="scroll-top">
+		<div class="arrow up"></div>
+	</button>
+    
+    <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+    <script src="js/topnav.js"></script>
+        
+    </script>
+	
+	<!-- Flip card script from https://codepen.io/mondal10/pen/WNNEvjV -->
+	<script>
+	var cards = document.querySelectorAll('.card');
+
+	[...cards].forEach((card)=>{
+		card.addEventListener( 'click', function() {
+		card.classList.toggle('is-flipped');
+		});
+	});
+	</script>
+
+
+</body>
+</html>

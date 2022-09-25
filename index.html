@@ -35,17 +35,16 @@
 <body>
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="new-arrivals.html" class="sub-link">New Arrivals</a>
-            <a href="buy.html" class="sub-link">Book of the Month</a>            
-            <a href="about.html" class="sub-link">Restorations</a>
-            <a href="about.html" class="sub-link">Showcase</a>
-            <a href="about.html" class="sub-link">Valuations</a>
-            <a href="about.html" class="sub-link">Contact Form</a>
-            <a href="about.html" class="sub-link">About Us</a>
+            <a href="index.html"class="nav-link active">Home</a>
+            <a href="new-arrivals.html"  class="nav-link">New Arrivals</a>
+            <a href="book-of-the-month.html" class="nav-link">Book of the Month</a>            
+            <a href="about.html" class="nav-link">Restorations</a>
+            <a href="about.html" class="nav-link">Valuations</a>
+            <a href="about.html" class="nav-link">Contact Form</a>
+            <a href="about.html" class="nav-link">About Us</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
-    </nav>    
+    </nav>        
     
     <header>
 		<div class="row">
@@ -192,7 +191,7 @@
             </div>
 		 </div>
 		 
-        <!-- Aside end -->   
+        <!-- Aside item -->   
         <div class="aside-title">
             <h2 class="aside-lower-title">Where to Find Us</h2>		
             <div class="dash"></div>
@@ -220,16 +219,7 @@
 	</button>
     
     <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-            x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script src="js/topnav.js"></script>
 
 
 </body>

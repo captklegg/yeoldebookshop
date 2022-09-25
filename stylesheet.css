@@ -116,6 +116,11 @@ aside {
 	padding: 0 0.5em;
 	width: 100%;
 	}
+	
+#author {
+	margin: 0 auto;
+	width:40%;
+}
 
 /* Header */
 .row {  
@@ -168,9 +173,14 @@ aside {
 	}
 
 .flex-arrivals-container > div {
-	width: 100px;
+	width: 200px;
 	margin: 10px;
 	text-align: center;
+	}
+	
+.flex-flipcard-container {
+	display: flex;
+	justify-content: space-around;
 	}
 
 #more {
@@ -254,6 +264,15 @@ a {
 
 #logo {
 	font-size: 0.8rem;
+	text-align: center;
+	}
+	
+li {
+	margin-left: 1em;
+	}
+	
+figcaption {
+	margin-bottom: 1em;
 	text-align: center;
 	}
 
@@ -379,7 +398,12 @@ img {
 	aside {
 		 grid-column: 2 / 5;
 		 grid-row: 4 / 5;
-    }	
+    }
+
+	#author {
+		margin: 0 auto;
+		width:40%;
+	}	
 
 	footer {
 		grid-column: 1 / 6;
@@ -428,4 +452,9 @@ img {
 		 grid-column: 3 / 4;
 		 grid-row: 3 / 4;
     }
+	
+	#author {
+		margin: 0 auto;
+		width:60%;
+	}
 }

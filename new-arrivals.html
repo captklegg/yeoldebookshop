@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ye Olde Bookshop | Used and First Edition Books</title>
+    <title>Ye Olde Bookshop | New Arrivals</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
 	
@@ -35,14 +35,13 @@
 <body>
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="index.html">Home</a>
-            <a href="new-arrivals.html"  class="active">New Arrivals</a>
-            <a href="buy.html" class="sub-link">Book of the Month</a>            
-            <a href="about.html" class="sub-link">Restorations</a>
-            <a href="about.html" class="sub-link">Showcase</a>
-            <a href="about.html" class="sub-link">Valuations</a>
-            <a href="about.html" class="sub-link">Contact Form</a>
-            <a href="about.html" class="sub-link">About Us</a>
+            <a href="index.html"class="nav-link">Home</a>
+            <a href="new-arrivals.html"  class="nav-link active">New Arrivals</a>
+            <a href="buy.html" class="nav-link">Book of the Month</a>            
+            <a href="about.html" class="nav-link">Restorations</a>
+            <a href="about.html" class="nav-link">Valuations</a>
+            <a href="about.html" class="nav-link">Contact Form</a>
+            <a href="about.html" class="nav-link">About Us</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
     </nav>    
@@ -85,88 +84,114 @@
               <p>Browse a selection of used books that have just come in. If you see something you like, please drop by or <a href="contact.html" title="Contact us">contact us</a>.</p>
             <div class="item-border"></div>
         </div>
-        
-        <div class="front-page-item">
-            <div class="flex-arrivals-container">
-              <img class="book-cover" src="images/books/asimov.jpg">
-              <img class="book-cover" src="images/books/drno.jpg">
-              <img class="book-cover" src="images/books/bunker.jpg">
-            </div>
-            <h3 class="see-more"><a href="new_arrivals.html">See more</a></h3>
-            <div class="item-border"></div>
-        </div>
+		
+		<div id="myBtnContainer">
+		  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		  <button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
+		  <button class="btn" onclick="filterSelection('classics')"> Classics</button>
+		  <button class="btn" onclick="filterSelection('crime')"> Crime</button>
+		  <button class="btn" onclick="filterSelection('humour')"> Humour</button>
+		  <button class="btn" onclick="filterSelection('NZ-authors')"> New Zealand Authors</button>
+		  <button class="btn" onclick="filterSelection('sf')"> Science Fiction</button>
+		  <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+		</div>
+
+		<div class="container">
+			<div class="filterDiv classics">
+				<img class="book-cover" src="images/books/machiavelli.jpg">
+			</div>
+			<div class="filterDiv horror">
+				<img class="book-cover" src="images/books/salems.jpg">
+			</div>
+			<div class="filterDiv adventure">
+				<img class="book-cover" src="images/books/syn.jpg">
+			</div>
+			<div class="filterDiv sf">
+				<img class="book-cover" src="images/books/asimov.jpg">
+			</div>
+			<div class="filterDiv thriller">
+				<img class="book-cover" src="images/books/drno.jpg">
+			</div>
+			<div class="filterDiv crime">
+				<img class="book-cover" src="images/books/bunker.jpg">
+			</div>
+			<div class="filterDiv horror">
+				<img class="book-cover" src="images/books/jaws.jpg">
+			</div>
+			<div class="filterDiv adventure">
+				<img class="book-cover" src="images/books/treasure-island.jpg">
+			</div>
+			<div class="filterDiv sf">
+				<img class="book-cover" src="images/books/rendezvous-with-rama.jpg">
+			</div>
+			<div class="filterDiv sf humour">
+				<img class="book-cover" src="images/books/hitchhikers.jpg">
+			</div>
+			<div class="filterDiv NZ-authors">
+				<img class="book-cover" src="images/books/shredders.jpg">
+			</div>
+			<div class="filterDiv NZ-authors">
+				<img class="book-cover" src="images/books/lagoon.jpg">
+			</div>
+			<div class="filterDiv NZ-authors">
+				<img class="book-cover" src="images/books/soup-diaries.jpg">
+			</div>
+			<div class="filterDiv classics">
+				<img class="book-cover" src="images/books/bell-tolls.jpg">
+			</div>
+			<div class="filterDiv classics adventure">
+				<img class="book-cover" src="images/books/kidnapped.jpg">
+			</div>
+			<div class="filterDiv crime">
+				<img class="book-cover" src="images/books/thebigsleep.jpg">
+			</div>
+			<div class="filterDiv humour">
+				<img class="book-cover" src="images/books/fear_and_loathing.jpg">
+			</div>
+			<div class="filterDiv crime classics">
+				<img class="book-cover" src="images/books/sherlock_holmes.jpg">
+			</div>
+			<div class="filterDiv horror thriller">
+				<img class="book-cover" src="images/books/shining.jpg">
+			</div>
+			<div class="filterDiv classic">
+				<img class="book-cover" src="images/books/quixote.jpg">
+			</div>
+		</div>
 		
     </main>
 	
 	<aside>
         <div class="aside-title">
-            <h2 class="aside">Latest News</h2>		
+            <h2 class="aside">We Buy Books</h2>		
             <div class="dash"></div>
         </div>
 		
-		<!-- Aside item -->
-		<div class="aside-item">
-			<div class="aside-item-image">
-				<img class="aside-image" src="images/books/lagoon.jpg">
-			</div>
-			<div class="aside-item-text">
-				<h3 class="aside">Author Reading</h3>
-                <div class="read-more mb-12" style="--line-clamp: 3">
-                    <input id="read-more-checkbox" type="checkbox" class="read-more__checkbox" aria-hidden="true">
-                    <p class="read-more__text mb-2">Sherrie McNib will visit <i>Ye Olde Bookshop</i> to read her new romance novel "The Lagoon".
-                    There will also be a book signing, and tea and scones. October 27th, 7:30 pm</p>
-                    <label for="read-more-checkbox" class="read-more__label" data-read-more="Read more" data-read-less="See less" aria-hidden="true"></label>
-                </div>
-			</div>
-		</div>
+		<!-- Aside text -->
+		<p>Do you have books you want to sell?</p>
+		<p>Bring in any books you would like to sell to our shop. We pay well for books that are in good condition and have good resale value.</p>
+		<p>We are especially interested in first edition or rare books.</p>
+		<p>See our valuations page for more information.</p>
 		
-		<!-- Aside item -->
-		<div class="aside-item">
-			<div class="aside-item-image">
-				<img class="aside-item-image" src="images/books/soup-diaries.jpg">
-			</div>
-			<div class="aside-item-text">
-				<h3 class="aside">Book Promotion</h3>
-                <div class="read-more mb-12" style="--line-clamp: 3">
-                     <input id="read-more-checkbox-2" type="checkbox" class="read-more__checkbox" aria-hidden="true">
-                    <p class="read-more__text mb-2">Local author and friend of Ye Olde Bookshop, Digby Clifton, will be in store to promote
-                    his new murder mystery book "The Soup Diaries". November 7th, 6:00 pm</p>
-                     <label for="read-more-checkbox-2" class="read-more__label" data-read-more="Read more" data-read-less="See less" aria-hidden="true"></label>
-                </div>
-			</div>
-		</div>
-		
-		<!-- Aside item -->
-        <div class="aside-item">
-			<div class="aside-item-image">
-				<img class="aside-item-image" src="images/books/casino-girl.jpg">
-			</div>
-			<div class="aside-item-text">
-				<h3 class="aside">New Release</h3>
-                <div class="read-more mb-12" style="--line-clamp: 3">
-                     <input id="read-more-checkbox-3" type="checkbox" class="read-more__checkbox" aria-hidden="true">
-                    <p class="read-more__text mb-2">In store now, the new mystery romance novel by Christchurch author Andy Simons is available.
-                    This is a print-on-demand book and available in limited numbers. Get yours quick!</p>
-                    <label for="read-more-checkbox-3" class="read-more__label" data-read-more="Read more" data-read-less="See less" aria-hidden="true"></label>                
-                </div>
-            </div>
-		 </div>
-		 
-        <!-- Aside end -->   
-        <div class="aside-title">
-            <h2 class="aside-lower-title">Where to Find Us</h2>		
+		<div class="aside-title">
+            <h2 class="aside">Wanted Books</h2>		
             <div class="dash"></div>
         </div>
-		<div class="aside-item">
-			<div class="aside-item-find-us">
-                <p class="address">119 Colombo Street</p>
-                <p class="address">Sydenham</p>
-                <p class="address">Christchurch</p>
-                <p><a href="https://goo.gl/maps/iKpR2NLHvfV3nBmP9" title="Map">Click here to get directions.</a></p>
-                <p class="address">Phone: (03) 340-7309</p>
-                <p class="address">Email: web@yeoldebooks.co.nz</p>
-			</div>
-		</div>
+		
+		<!-- Aside text -->
+		<ul>
+			<p>If you have any of the following books and would like to sell, give us a call for a valuation. We will pay top prices!</p>
+			<li>Douglas Adams - Hitch Hiker's Guide to the Galaxy (First or Second Issue)</li>
+			<li>Ray Bradbury - Children's Titles</li>
+			<li>Terry Pratchett - Colour of Magic (First Edition)</li>
+			<li>Stephen King - Der Nebel</li>
+			<li>Aleister Crowley - Any first editions</li>
+			<li>C.S. Lewis - Any first editions</li>
+			<li>Dashiell Hammett - First editions</li>
+			<li>Mike Bennett - First editions</li>
+			<li>Edward G. Talbot - First editions</li>
+			<li>Seth Harwood - First editions</li>
+		</ul>
     </aside>
     
     <footer>
@@ -180,16 +205,44 @@
 	</button>
     
     <!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-            x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+    <script src="js/topnav.js"></script>
+        
     </script>
+	
+	<!-- Filter script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements -->
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("filterDiv");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+	</script>
 
 
 </body>
