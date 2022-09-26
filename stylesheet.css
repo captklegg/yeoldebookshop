@@ -181,6 +181,7 @@ aside {
 .flex-flipcard-container {
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 2em;
 	}
 
 #more {
