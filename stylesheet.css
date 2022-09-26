@@ -205,7 +205,7 @@ h1, h2, h3 {
 	text-align: center;
 	}
 
-h1, h2, h3, nav, footer, figcaption {
+h1, h2, h3, dropdown, dropbtn, nav, footer, figcaption {
 	font-family: Monteserrat, "Arial", sans-serif;
 	font-weight: bold;
 	}
