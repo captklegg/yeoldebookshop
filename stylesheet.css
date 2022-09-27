@@ -122,6 +122,7 @@ aside {
 	display: inline-block;
 	padding: 0 0.5em;
 	width: calc(100% - 215px);
+	margin-bottom: 2em;
 	}
 
 .aside-item-find-us {
