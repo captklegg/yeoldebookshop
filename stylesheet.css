@@ -205,10 +205,8 @@ aside {
 
 
 /* TYPOGRAPHY */
-
 body {
 	font-family: Forum, serif;
-	color: #444;
 	line-height: 1.5;
 	}
 	
@@ -221,7 +219,7 @@ h1, h2, h3 {
 	}
 
 h1, h2, h3, dropdown, dropbtn, nav, footer, figcaption {
-	font-family: Monteserrat, "Arial", sans-serif;
+	font-family: Montserrat, "Arial", sans-serif;
 	font-weight: bold;
 	}
 
@@ -268,11 +266,6 @@ p.tagline {
 	text-align: center;
 	}
 
-a {
-	color: #c30000;
-	text-decoration: none;
-	}
-
 #logo {
 	font-size: 0.8rem;
 	text-align: center;
@@ -288,6 +281,10 @@ figcaption {
 	}
 
 /* COLOUR SCHEME & BORDERS */
+body {
+	background: #ffffe6;
+	color: #444444;
+}
 
 header, footer {
 	background-color: #ffffff;
@@ -309,6 +306,10 @@ nav {
 nav a {
 	color: #ffffff;
 	}
+	
+a {
+	color: #c30000;
+	}
 
 footer a {
 	color: #b0ab9b;
@@ -324,7 +325,6 @@ aside {
 
 
 /* NAVIGATION */
-
 nav ul {
 	list-style-type: none;
 	}
@@ -344,8 +344,7 @@ img {
 	width: 100%;
 	}
 
-@media screen and (min-width: 896px) {
-	
+@media screen and (min-width: 896px) {	
 	/* For screen resolutions from 896px wide  */
     
 	body {
@@ -422,8 +421,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1600px) {
-	
+@media screen and (min-width: 1600px) {	
     /* For screen resolutions 1600px and beyond  */
 	
     body {
