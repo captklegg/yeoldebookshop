@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ye Olde Bookshop | New Arrivals</title>
+    <title>Ye Olde Bookshop | Showcase</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
 	
@@ -80,119 +80,86 @@
 
     <main>
         <div class="front-page-item">
-            <h1>New Arrivals</h1>
+            <h1>Showcase</h1>
             <div class="dash"></div>
-              <p>Browse a selection of used books that have just come in. If you see something you like, please drop by or <a href="contact.html" title="Contact us">contact us</a>.</p>
+              <p>View the books on our "Tree of Books" in store. If a book interests you, please give us a call, or send us an email 
+			  through our <a href="contact.html">contact page</a>.</p><p>Below are a selection of books currently on the tree.</p>
             <div class="item-border"></div>
+			<!-- Book 1 -->
+			<div class="item">
+				<figure class="book-image-wide">
+					<img src="images/books/doctor_syn.jpg" alt="Doctor Syn: A Tale of the Romney Marsh cover">
+				</figure>
+				<div class="book-text-wide">
+					<h3>Doctor Syn: A Tale of the Romney Marsh</h3>
+					<p>Added by Jason Andrews, valued customer</p>
+					<p><strong>Genre:</strong> Historical novel</p>
+					<p><strong>Publication date:</strong> July, 1915</p>
+					<p><strong>Publisher:</strong> Nelson Press</p>
+					<p>Doctor Syn: A Tale of the Romney Marsh is the first of a series of books written by Russell Thorndike. It follows the adventures of Christopher Syn,
+					the kindly vicar of the town of Dymchurch on the east coast of England in the 18th century. Doctor Syn hides a sinister past, once known as the vicious pirate 
+					Captain Clegg, and could he also be the infamous "Scarecrow of Romney Marsh"?</p>
+					<p>First printed in 1915, this is a simple but great adventure story which has had three film adaptations.</p>
+				</div>
+			</div>
+			<!-- Book 2 -->
+			<div class="item">
+				<figure class="book-image-wide">
+					<img src="images/books/one-among-the-sleepless.jpg" alt="One Among the Sleepless cover">
+				</figure>
+				<div class="book-text-wide">
+					<h3>One Among the Sleepless</h3>
+					<p>Added by Nick Robinson, valued customer</p>
+					<p><strong>Genre:</strong> Thriller/Horror</p>
+					<p><strong>Publication date:</strong> July, 2002</p>
+					<p><strong>Publisher:</strong> Seed Publishing</p>
+					<p><i>One Among the Sleepless</i> follows the stories of several characters all linked to a spate of murders. Which one is the killer? Who is "The One".</p>
+					<p>Mike Bennett combines horror and humour into a story which is hard to put down. Mike also released this in audio form as a podcast series.</p>
+				</div>
+			</div>
+			<!-- Book 3 -->
+			<div class="item">
+				<figure class="book-image-wide">
+					<img src="images/books/the-way-of-wyrd.jpg" alt="The Way of Wyrd cover">
+				</figure>
+				<div class="book-text-wide">
+					<h3>The Way of Wyrd</h3>
+					<p>Added by Martin Walkyier, valued customer</p>
+					<p><strong>Genre:</strong> Adventure/Spiritual</p>
+					<p><strong>Publication date:</strong> January, 1992</p>
+					<p><strong>Publisher:</strong> Hay House</p>
+					<p>Sent onto a mission into the forests of pagan Anglo-Saxon England, Wat Brand, a Christian scribe, suddenly finds his vision of the world: 
+					turned upside down. Brand is instructed in the magical lore of plants, runes, fate and the life force until finally he journeys to the spirit 
+					world on a quest to encounter the nature of his own soul.</p>
+				</div>
+			</div>
         </div>
 		
-		<div id="myBtnContainer">
-		  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-		  <button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
-		  <button class="btn" onclick="filterSelection('classics')"> Classics</button>
-		  <button class="btn" onclick="filterSelection('crime')"> Crime</button>
-		  <button class="btn" onclick="filterSelection('humour')"> Humour</button>
-		  <button class="btn" onclick="filterSelection('NZ-authors')"> New Zealand Authors</button>
-		  <button class="btn" onclick="filterSelection('sf')"> Science Fiction</button>
-		  <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
-		</div>
-
-		<div class="container">
-			<div class="filterDiv classics">
-				<img class="book-cover" src="images/books/machiavelli.jpg">
-			</div>
-			<div class="filterDiv horror">
-				<img class="book-cover" src="images/books/salems.jpg">
-			</div>
-			<div class="filterDiv adventure">
-				<img class="book-cover" src="images/books/syn.jpg">
-			</div>
-			<div class="filterDiv sf">
-				<img class="book-cover" src="images/books/asimov.jpg">
-			</div>
-			<div class="filterDiv thriller">
-				<img class="book-cover" src="images/books/drno.jpg">
-			</div>
-			<div class="filterDiv crime">
-				<img class="book-cover" src="images/books/bunker.jpg">
-			</div>
-			<div class="filterDiv horror">
-				<img class="book-cover" src="images/books/jaws.jpg">
-			</div>
-			<div class="filterDiv adventure">
-				<img class="book-cover" src="images/books/treasure-island.jpg">
-			</div>
-			<div class="filterDiv sf">
-				<img class="book-cover" src="images/books/rendezvous-with-rama.jpg">
-			</div>
-			<div class="filterDiv sf humour">
-				<img class="book-cover" src="images/books/hitchhikers.jpg">
-			</div>
-			<div class="filterDiv NZ-authors">
-				<img class="book-cover" src="images/books/shredders.jpg">
-			</div>
-			<div class="filterDiv NZ-authors">
-				<img class="book-cover" src="images/books/lagoon.jpg">
-			</div>
-			<div class="filterDiv NZ-authors">
-				<img class="book-cover" src="images/books/soup-diaries.jpg">
-			</div>
-			<div class="filterDiv classics">
-				<img class="book-cover" src="images/books/bell-tolls.jpg">
-			</div>
-			<div class="filterDiv classics adventure">
-				<img class="book-cover" src="images/books/kidnapped.jpg">
-			</div>
-			<div class="filterDiv crime">
-				<img class="book-cover" src="images/books/thebigsleep.jpg">
-			</div>
-			<div class="filterDiv humour">
-				<img class="book-cover" src="images/books/fear_and_loathing.jpg">
-			</div>
-			<div class="filterDiv crime classics">
-				<img class="book-cover" src="images/books/sherlock_holmes.jpg">
-			</div>
-			<div class="filterDiv horror thriller">
-				<img class="book-cover" src="images/books/shining.jpg">
-			</div>
-			<div class="filterDiv classic">
-				<img class="book-cover" src="images/books/quixote.jpg">
-			</div>
-		</div>
+		
 		
     </main>
 	
 	<aside>
         <div class="aside-title">
-            <h2 class="aside">We Buy Books</h2>		
+            <h2 class="aside">About the Tree of Books</h2>		
             <div class="dash"></div>
         </div>
-		
+		<figure id="author">
+			<img src="images/booktree.jpg" alt="The Book of Trees">
+		</figure>
+		<figcaption>The Tree of Books, September, 2022</figcaption>
 		<!-- Aside text -->
-		<p>Do you have books you want to sell?</p>
-		<p>Bring in any books you would like to sell to our shop. We pay well for books that are in good condition and have good resale value.</p>
-		<p>We are especially interested in first edition or rare books.</p>
-		<p>See our valuations page for more information.</p>
+		<p>We at Ye Olde Bookshop love trees!</p>
+		<p>Without trees we would not have books, so to celebrate these amazing plants we created the "Tree of Books" in our shop.</p>
+		<p>Since 1994 the <i>Tree of Books</i> has showcased our favourite books as well as customer favourites. 
+		And in 2002 we added a children's <i>Tree of Books</i> in he children's section of the store.</p>
 		<div class="item-border"></div>
-		
 		<div class="aside-title">
-            <h2 class="aside">Wanted Books</h2>		
+            <h2 class="aside">Tree of the Year</h2>		
             <div class="dash"></div>
         </div>
-		<!-- Aside text -->
-		<ul>
-			<p>If you have any of the following books and would like to sell, give us a call for a valuation. We will pay top prices!</p>
-			<li>Douglas Adams - Hitch Hiker's Guide to the Galaxy (First or Second Issue)</li>
-			<li>Ray Bradbury - Children's Titles</li>
-			<li>Terry Pratchett - Colour of Magic (First Edition)</li>
-			<li>Stephen King - Der Nebel</li>
-			<li>Aleister Crowley - Any first editions</li>
-			<li>C.S. Lewis - Any first editions</li>
-			<li>Dashiell Hammett - First editions</li>
-			<li>Mike Bennett - First editions</li>
-			<li>Edward G. Talbot - First editions</li>
-			<li>Seth Harwood - First editions</li>
-		</ul>
+		<p>Do you have a favourite tree? Why don't you vote it for Tree of the Year? For more information go to the 
+		<a href="https://www.treeoftheyear.co.nz/">Tree of the Year Aoteoroa</a> website.</p>
     </aside>
     
     <footer>

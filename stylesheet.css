@@ -82,7 +82,7 @@ aside {
 	margin: 25px auto;
 	}
 
-/* Aside */
+/* Aside and Showcase items */
 
 .aside-title {
 	margin-bottom: 2em;
@@ -92,22 +92,36 @@ aside {
 	margin-top: 2em;
 	}
 
-.aside-item {
+.item {
 	padding-bottom: 2em;
 	}
 
-.aside-item-image {
+.book-image {
 	display: inline-block;
 	margin: 0.25em;
 	padding: 0;
 	width: 100px;
 	}
+	
+.book-image-wide {
+	display: inline-block;
+	margin: 0.25em;
+	padding: 0;
+	width: 200px;
+	}
 
-.aside-item-text {
+.book-text {
 	vertical-align: top;
 	display: inline-block;
 	padding: 0 0.5em;
 	width: calc(100% - 115px);
+	}
+	
+.book-text-wide {
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 0.5em;
+	width: calc(100% - 215px);
 	}
 
 .aside-item-find-us {
