@@ -15,6 +15,10 @@ tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure,
 
 /* LAYOUT */
 
+html {
+	scroll-behavior: smooth;
+}
+
 nav, main, aside, footer {
 	padding: 1em;
 }
@@ -72,7 +76,7 @@ aside {
 	width: 30px;
 	height: 2px;
 	background-color: #af272f;
-	margin: 0 auto 20px;
+	margin: 0 auto 2em;
 	}
 
 .item-border {
@@ -243,7 +247,11 @@ h3.aside {
 	}
 
 h2.section-title {
-  text-transform: uppercase;
+	text-transform: uppercase;
+	}
+	
+.showcase-heading {
+	margin: 3em auto 1em;
 	}
 
 nav {
@@ -251,6 +259,11 @@ nav {
 	}
 
 p {
+	font-size: 18px;
+	margin-bottom: 0.5em;
+	}
+	
+a {
 	font-size: 18px;
 	margin-bottom: 0.5em;
 	}
@@ -279,6 +292,14 @@ figcaption {
 	margin-bottom: 1em;
 	text-align: center;
 	}
+	
+.showcase-label {
+	text-decoration: none;
+	}
+	
+.showcase-category {
+	text-align: center;
+}
 
 /* COLOUR SCHEME & BORDERS */
 body {
@@ -287,7 +308,7 @@ body {
 }
 
 header, footer {
-	background-color: #ffffff;
+	background-color: #ffffe6;
 	color: #404040;
 	}
 
