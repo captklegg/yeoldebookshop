@@ -19,9 +19,10 @@
 		<meta name="revisit-after" content="30 days">
 		<meta name="author" content="Julia Appleby ">
 		
-		<!-- Google Montserrat and Forum fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+		<!-- Google Raleway and Forum fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Forum&family=Raleway&display=swap" rel="stylesheet">
 		
 		<!-- Code for the hamburger menu -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -85,9 +86,10 @@
 				<div class="dash"></div>
 				  <p>Do you have a request or question? Use the form below to get in contact. We will reply as soon as we can.</p>
 			</div>
-			
+			<!-- Contact form. Uses Formsubmit.co API, so it is a working form -->
+			<!-- Use this link to test the form if you wish: https://yeoldebookshop.netlify.app/ -->
 			<div class="contact-container">
-				<form action="/action_page.php">
+				<form action="https://formsubmit.co/torazaemon@hotmail.com" method="POST" />
 					<label for="fname">First Name</label>
 					<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -360,9 +362,11 @@
 					<p>119 Colombo Street</p>
 					<p>Sydenham</p>
 					<p>Christchurch</p>
-					<p><a href="https://goo.gl/maps/iKpR2NLHvfV3nBmP9" title="Map">Click here to get directions.</a></p>
-					<p>Phone: (03) 340-7309</p>
-					<p>Email: web@yeoldebooks.co.nz</p>
+					<p><strong>Phone:</strong> (03) 340-7309</p>
+					<p><strong>Email:</strong> web@yeoldebooks.co.nz</p>
+					<p>Our Location</p>
+					<!-- Google Map embed -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.8167753353083!2d172.6361080192639!3d-43.55931716933275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3220a5e8c9ca59%3A0x13b4916647ba0d6f!2s119%20Colombo%20Street%2C%20Sydenham%2C%20Christchurch%208023!5e0!3m2!1sen!2snz!4v1664488295406!5m2!1sen!2snz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 		</aside>
@@ -370,12 +374,6 @@
 		<footer>
 			<p class="small">&copy; Copyright 2022 Ye Olde Bookshop</p>
 		</footer>
-		
-		<!-- Scroll to top button -->
-		<script src="js/scroll-to-top.js"></script>
-		<button class="scroll-top">
-			<div class="arrow up"></div>
-		</button>
 		
 		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
 		<script src="js/topnav.js"></script>

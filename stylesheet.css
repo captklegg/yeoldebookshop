@@ -167,6 +167,7 @@ aside {
 	border: 1px solid #c0c0c0;
 	border-radius: 4px;
 	font-size: 1em;
+	width: 90%;
 	}
 .title {
 	width: 100%;
@@ -223,7 +224,7 @@ h1, h2, h3 {
 	}
 
 h1, h2, h3, dropdown, dropbtn, nav, footer, figcaption {
-	font-family: Montserrat, "Arial", sans-serif;
+	font-family: Raleway, "Arial", sans-serif;
 	font-weight: bold;
 	}
 
@@ -392,7 +393,7 @@ img {
     }
 	
 	.search input[type=text] {
-		width: 12em;
+		width: 10em;
 	}
 
 	.header-search {
