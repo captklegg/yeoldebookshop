@@ -260,8 +260,8 @@ h2.section-title {
 	margin: 3em auto 1em;
 	}
 
-nav {
-  font-size: 1rem;
+.topnav {
+	line-height: 14px;
 	}
 
 p {
@@ -271,7 +271,6 @@ p {
 	
 a {
 	font-size: 18px;
-	margin-bottom: 0.5em;
 	}
 
 p.small {
