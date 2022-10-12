@@ -140,6 +140,12 @@ aside {
 	margin: 0 auto;
 	width:40%;
 }
+
+#about-us-image {
+	margin: 0 auto;
+	width:150px;
+}
+
 /* Video constant width/height */
 video {
 	max-width: 100%;
@@ -228,7 +234,7 @@ h1, h2, h3 {
 	text-align: center;
 	}
 
-h1, h2, h3, dropdown, dropbtn, nav, footer, figcaption {
+h1, h2, h3, dropdown, dropbtn, nav, footer {
 	font-family: Raleway, "Arial", sans-serif;
 	font-weight: bold;
 	}
@@ -254,6 +260,10 @@ h3.aside {
 
 h2.section-title {
 	text-transform: uppercase;
+	}
+	
+figcaption {
+	font-style: italic;
 	}
 	
 .showcase-heading {
