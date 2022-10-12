@@ -140,6 +140,11 @@ aside {
 	margin: 0 auto;
 	width:40%;
 }
+/* Video constant width/height */
+video {
+	max-width: 100%;
+	height: auto;
+}
 
 /* Header */
 .row {  
