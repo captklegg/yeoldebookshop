@@ -83,7 +83,7 @@ aside {
 	width: 75%;
 	height: 2px;
 	background-color: #cccccc;
-	margin: 25px auto;
+	margin: 4em auto;
 	}
 
 /* Aside and Showcase items */
@@ -97,7 +97,7 @@ aside {
 	}
 
 .item {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	}
 
 .book-image {
