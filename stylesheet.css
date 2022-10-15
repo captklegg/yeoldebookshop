@@ -24,7 +24,8 @@ nav, main, aside, footer {
 }
 
 header {
-	background-image: url("images/bookshelf.webp");
+	background-image: url("images/bookshelf.jpg");
+	height: 300px;
 	margin: 0 auto;
 	padding: 0;
 	}
