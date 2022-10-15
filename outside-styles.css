@@ -498,6 +498,7 @@
 /* Style the buttons */
 .btn {
   border: none;
+  border-radius: 7px;
   outline: none;
   padding: 8px 10px;
   margin: 2px;
