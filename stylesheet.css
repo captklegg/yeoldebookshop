@@ -87,7 +87,7 @@ aside {
 	}
 	
 /* Horizontal scroll */
-div.scrollmenu {
+.scrollmenu {
 	display: flex;
 	background-color: transparent;
 	margin-bottom: 1em;
