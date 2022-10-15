@@ -64,7 +64,7 @@ main {
 	}
 
 aside {
-	border: 1px solid #cccccc;
+	border: 1px solid #F0F0F0;
 	margin: 1em 0 2em;	
 	}
 
@@ -366,6 +366,10 @@ nav a {
 a {
 	color: #c30000;
 	}
+	
+.contact-button {
+	text-decoration: none;
+	}
 
 footer a {
 	color: #b0ab9b;
@@ -376,7 +380,7 @@ footer a {
 	}
 
 aside {
-	background: #fbf9ee;
+	background: #ffffff;
 	}
 
 
