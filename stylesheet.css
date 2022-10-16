@@ -25,6 +25,7 @@ nav, main, aside, footer {
 
 header {
 	background-image: url("images/bookshelf.jpg");
+	background-position: center;
 	height: 300px;
 	margin: 0 auto;
 	padding: 0;
