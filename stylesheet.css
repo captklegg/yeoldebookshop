@@ -24,7 +24,7 @@ nav, main, aside, footer {
 }
 
 header {
-	background-image: url("images/bookshelf.jpg");
+	background-image: url("images/bookshelf.webp");
 	background-position: center;
 	height: 300px;
 	margin: 0 auto;
@@ -257,7 +257,7 @@ h1, h2, h3 {
 	}
 
 h1, h2, h3, dropdown, dropbtn, nav, footer {
-	font-family: Raleway, "Arial", sans-serif;
+	font-family: Bodoni Moda, "Arial", sans-serif;
 	font-weight: bold;
 	}
 
@@ -361,10 +361,6 @@ nav {
 	border-bottom: 1px solid #e6ad10
 	}
 
-nav a {
-	color: #ffffff;
-	}
-	
 a {
 	color: #c30000;
 	}
