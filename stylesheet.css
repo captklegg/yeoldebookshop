@@ -84,8 +84,15 @@ aside {
 .item-border {
 	width: 75%;
 	height: 2px;
-	background-color: #cccccc;
+	background-color: #f0f0f0;
 	margin: 4em auto;
+	}
+	
+.aside-item-border {
+	width: 75%;
+	height: 2px;
+	background-color: #f0f0f0;
+	margin: 2em auto;
 	}
 	
 /* Horizontal scroll */
@@ -298,12 +305,16 @@ figcaption {
 
 p {
 	font-size: 18px;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	}
 	
 a {
 	font-size: 18px;
 	}
+	
+.see-more {
+	text-align: center;
+}
 
 p.small {
 	font-size: 0.8em;
