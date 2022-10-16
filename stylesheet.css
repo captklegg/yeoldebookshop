@@ -271,17 +271,17 @@ h2 {
 	margin-bottom: 1em;
 	}
 
+h2.section-title {
+	text-transform: uppercase;
+	}
+
 h3 {
   margin-bottom: 1em;
 	}
 
-h3.aside {	
+h4.aside {	
 	color: #c30000;
 	text-align: left;
-	}
-
-h2.section-title {
-	text-transform: uppercase;
 	}
 	
 figcaption {
