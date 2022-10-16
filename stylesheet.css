@@ -156,13 +156,6 @@ aside {
 	width: calc(100% - 215px);
 	margin-bottom: 2em;
 	}
-
-.aside-item-find-us {
-	vertical-align: top;
-	display: inline-block;
-	padding: 0 0.5em;
-	width: 100%;
-	}
 	
 #author {
 	margin: 0 auto;
@@ -356,7 +349,7 @@ body {
 }
 
 header, footer {
-	background-color: #ffffe6;
+	background-color: #ffffff;
 	color: #404040;
 	}
 
@@ -365,12 +358,16 @@ header {
 	}
 
 nav {
-	background-color: #ffc72c;
+	background-color: #f4d03f;
 	}
 
 nav {
-	border-bottom: 1px solid #e6ad10
+	border-bottom: 1px solid #f1c40f;
 	}
+	
+.aside-title {
+	background: #f4d03f;
+}
 
 a {
 	color: #c30000;
