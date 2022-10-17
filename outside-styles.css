@@ -32,7 +32,6 @@
   .topnav a.icon {
     float: right;
     display: block;
-	padding: 10px 0;
   }
   .topnav a {  
   font-size: 16px;
@@ -211,7 +210,7 @@
   text-decoration: none;
   display: grid;
   font-size: 16px;
-  margin: 1em auto;
+  margin: 2em auto;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -353,4 +352,25 @@ input[type=submit]:hover {
   border: 1px solid #cccccc;
   background-color: #fbf9ee;
   padding: 2em;
+}
+
+/* Divider from https://codepen.io/airen/details/MWWOmEM */
+
+.divider
+{
+	position: relative;
+	margin: 3em 0;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(157,159,161), transparent);
 }
