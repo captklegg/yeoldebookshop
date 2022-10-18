@@ -219,7 +219,7 @@ video {
 	padding: 6px;
 	border-radius: 4px;
 	font-size: 1em;
-	width: 90%;
+	width: 80%;
 }
 	
 .title {
@@ -482,7 +482,7 @@ img {
     }
 	
 	.search input[type=text] {
-		width: 10em;
+		width: 12em;
 	}
 
 	.header-search {
@@ -541,7 +541,7 @@ img {
     }
 	
 	.search input[type=text] {
-		width: 15em;
+		width: 16em;
 	}
 
 	.header-search {
