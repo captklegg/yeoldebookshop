@@ -43,7 +43,7 @@ nav, main, aside, footer {
 header {
 	background-image: url("images/interior.webp");
 	background-position: center;
-	height: 300px;
+	height: 250px;
 	margin: 0 auto;
 	padding: 0;
 }
