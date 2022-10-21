@@ -92,10 +92,12 @@
 			<!-- Use this link to test the form if you wish: https://yeoldebookshop.netlify.app/ -->
 			<div class="contact-container">
 				<form action="https://formsubmit.co/0b20b3250970e26bf947062cc01e699c" method="POST" />
-					<label for="fname">First Name</label>
+					<label for="fname">First Name (required)</label>
 					<input type="text" id="fname" name="firstname" placeholder="Your name..">
 					<label for="lname">Last Name</label>
 					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<label for="lname">Email (required)</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your email address.." required>
 					<label for="country">Country</label>
 					<select id="country" name="country">
 						<option value="Afghanistan">Afghanistan</option>
@@ -337,16 +339,21 @@
 						<option value="Zambia">Zambia</option>
 						<option value="Zimbabwe">Zimbabwe</option>
 					</select>
-				<label for="reason">What can we do for you?</label>
-					<select id="reason" name="reason">
-						<option value="Question">I have a book enquiry</option>	
-						<option value="Question">I would like a valuation</option>
-						<option value="Question">I would like a book restored</option>	
-						<option value="Question">I have a question</option>				
-					</select>
-				<label for="subject">Subject</label>
-				<textarea id="subject" name="subject" placeholder="Your message here..." style="height:200px"></textarea>
-				<input type="submit" value="Submit">
+					<label for="reason">What can we do for you?</label>
+						<select id="reason" name="reason">
+							<option value="Question">I have a book enquiry</option>	
+							<option value="Question">I would like a valuation</option>
+							<option value="Question">I would like a book restored</option>	
+							<option value="Question">I have a question</option>				
+						</select>
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Your message here..." style="height:200px"></textarea>
+					<label class="newsletter">
+						<input type="checkbox">
+						<span class="checkmark">I would like to receive the monthly newsletter</span>
+					</label>					
+					<input type="submit" value="Submit">
+
 				</form>
 			</div>	
 			
