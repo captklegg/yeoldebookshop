@@ -178,7 +178,7 @@ aside {
 	margin-bottom: 2em;
 }
 	
-#author {
+#author-image {
 	margin: 0 auto;
 	width:40%;
 }
@@ -186,6 +186,14 @@ aside {
 #about-us-image {
 	margin: 0 auto;
 	width:150px;
+}
+
+.label-title {
+	font-weight: 700;
+}
+
+.form-spacing {
+	padding-bottom: 1em;
 }
 
 /* Video constant width/height */
@@ -331,7 +339,11 @@ p.address {
 }
 	
 a {
-	font-size: 18px;
+	font-size: 1em;
+}
+
+footer a {
+    font-size: 1em;
 }
 
 a.nav-link {
@@ -428,7 +440,7 @@ h4.aside {
 }
 
 footer a {
-	color: #b0ab9b;
+	color: #404040;
 }
 
 .selected, a:hover {
@@ -527,7 +539,7 @@ img {
 		 grid-row: 4 / 5;
     }
 
-	#author {
+	#author-image {
 		margin: 0 auto;
 		width:40%;
 	}	
@@ -579,7 +591,7 @@ img {
 		 grid-row: 3 / 4;
     }
 	
-	#author {
+	#author-image {
 		margin: 0 auto;
 		width:60%;
 	}
