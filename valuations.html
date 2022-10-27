@@ -6,9 +6,6 @@
 		<!-- My CSS code -->
 		<link rel="stylesheet" href="stylesheet.css">
 		
-		<!-- CSS code from other sources -->
-		<link rel="stylesheet" href="outside-styles.css">
-		
 		<!-- Meta tags generated at https://www.seoptimer.com/meta-tag-generator -->
 		<meta name="title" content="Ye Olde Booshop">
 		<meta name="description" content="Ye Olde Bookshop is an independently owned bookshop in Christchurch. Specialists in rare and first edition books, and book restorations.">
@@ -17,12 +14,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="language" content="English">
 		<meta name="revisit-after" content="30 days">
-		<meta name="author" content="Julia Appleby ">
+		<meta name="author" content="Pizzaz Web Design">
 		
 		<!-- Google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Bodoni Moda&family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni Moda&family=Forum&display=swap" rel="stylesheet">
 		
 		<!-- Code for the hamburger menu -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,10 +28,14 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-		<link rel="manifest" href="images/favicon/site.webmanifest">    
+		<link rel="manifest" href="images/favicon/site.webmanifest">   
+
+		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+		<script src="js/topnav.js"></script>		
 	</head>
 
 	<body>
+		<!-- Responsive nav menu from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
 		<nav>
 			<div class="topnav" id="myTopnav">
 				<a href="index.html"class="nav-link">Home</a>
@@ -166,21 +167,6 @@
 		
 		<footer>
 			<p class="small">&copy; Copyright 2022 Ye Olde Bookshop | <a href="privacy">Privacy Policy</a></p>
-		</footer>
-		
-		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-		<script src="js/topnav.js"></script>
-		
-		<!-- Before/After Image Slider script from https://codepen.io/josephwong2004/pen/NWRGxdR -->
-		<script>
-		$("#slider").on("input change", (e)=>{
-		  const sliderPos = e.target.value;
-		  // Update the width of the foreground image
-		  $('.foreground-img').css('width', `${sliderPos}%`)
-		  // Update the position of the slider button
-		  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
-		});
-		</script>
-		
+		</footer>		
 	</body>
 </html>
