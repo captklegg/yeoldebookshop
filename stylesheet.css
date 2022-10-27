@@ -9,9 +9,10 @@ tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure,
 	border: 0;
 }
 
-/* Page fade-in */
+/* LAYOUT */
 
 body {
+	/* Page fade-in */
     animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -54,7 +55,7 @@ header {
 
 .header-search {
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 0;
 }
 
 .logo {
@@ -67,9 +68,11 @@ header {
 }
 
 .social-icon {
+	display: inline-block;
 	height: 35px;
 	margin: 0 0.5em;
 	width: 35px;
+	vertical-align: middle;
 }
 
 nav {
@@ -278,7 +281,7 @@ video {
 
 /* TYPOGRAPHY */
 body {
-	font-family: Forum, serif;
+	font-family: Forum, sans-serif;
 	line-height: 1.5;
 }
 	
@@ -291,7 +294,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3, dropdown, dropbtn, nav, footer {
-	font-family: Bodoni Moda, "Arial", sans-serif;
+	font-family: Bodoni Moda, Arial, serif;
 	font-weight: bold;
 }
 
@@ -329,7 +332,7 @@ figcaption {
 	line-height: 14px;
 }
 
-p {
+p, label {
 	font-size: 18px;
 	margin-bottom: 1em;
 }
@@ -354,7 +357,7 @@ a.nav-link {
 	text-align: center;
 }
 
-p.small {
+footer p {
 	font-size: 0.8em;
 }
 
@@ -516,9 +519,9 @@ img {
 	}
 
 	.social-icon {
-		 height: 35px;
-		 margin: 0 0.5em;
-		 width: 35px;
+		 height: 45px;
+		 margin: 0 5px;
+		 width: 45px;
 	}
 	    
     /* Header flexbox */
@@ -577,7 +580,7 @@ img {
 
 	.social-icon {
 		height: 40px;
-		margin: 0 1em;
+		margin: 0 10px;
 		width: 40px;
 	}
     

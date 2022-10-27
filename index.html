@@ -31,7 +31,11 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-		<link rel="manifest" href="images/favicon/site.webmanifest">    
+		<link rel="manifest" href="images/favicon/site.webmanifest"> 
+
+		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+		<script src="js/topnav.js"></script>
+		
 	</head>
 
 	<body>
@@ -53,7 +57,7 @@
 			<div class="row">
 				<div class="header-search">
 					<div class="search">
-						<input type="text" placeholder="Search.." aria-label="Search...">
+						<input type="text" placeholder="Search..." aria-label="Search...">
 					</div>
 				</div>
 				<div class="header-logo">
@@ -64,20 +68,15 @@
 					</div>
 				</div>
 				<div class="header-social">
-					<ul class="wrapper">
-						<li class="icon twitter">
-							<span class="tooltip">Twitter</span>
-							<span><i class="fa fa-twitter"></i></span>
-						</li>
-						<li class="icon instagram">
-							<span class="tooltip">Instagram</span>
-							<span><i class="fa fa-instagram"></i></span>
-						</li>
-						<li class="icon youtube">
-							<span class="tooltip">Youtube</span>
-							<span><i class="fa fa-youtube"></i></span>
-						</li>
-				  </ul>				
+					<div class="social-icon">						
+						<img src="images/icons/youtube.png" alt="Youtube">
+					</div>
+					<div class="social-icon">						
+						<img src="images/icons/instagram.png" alt="Instagram">
+					</div>
+					<div class="social-icon">						
+						<img src="images/icons/twitter.png" alt="Twitter">
+					</div>			
 				</div>
 			</div>
 		</header>
@@ -321,7 +320,5 @@
 			<p class="small">&copy; Copyright 2022 Ye Olde Bookshop | <a href="privacy">Privacy Policy</a></p>
 		</footer>
 		
-		<!-- Menu script from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-		<script src="js/topnav.js"></script>
 	</body>
 </html>
