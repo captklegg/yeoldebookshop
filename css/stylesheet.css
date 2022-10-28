@@ -49,13 +49,26 @@ header {
 	padding: 0;
 }
 
-.search input[type=text] {
+#header-search {
+	margin: 0 6em;
+	padding: 0;
+}
+
+#search {
 	margin: 0 0.5em;
 }
 
-.header-search {
-	margin: 0 auto;
-	padding: 1em 0;
+header > input[type=text], select, textarea {
+	width: 60%;
+	font-family: Forum, "Arial", sans-serif;
+	font-size: 1em;
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 
 .logo {
@@ -63,11 +76,11 @@ header {
 	width: 250px;
 }
 
-.header-social {
-	margin: 0 auto;
+#header-social {
+	margin: 0 6em;
 }
 
-.social-icon {
+#social-icon {
 	display: inline-block;
 	height: 35px;
 	margin: 0 0.5em;
@@ -87,6 +100,32 @@ main {
 
 aside {
 	margin: 1em 0 2em;	
+}
+
+/* Button from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
+#contact-button {
+	padding: 0.5em 2em;
+	display: grid;
+	margin: 2em auto 4em;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 12em;
+}
+
+#contact-button a:hover {
+	color: white;
+}
+
+#contact-button:hover {
+	background-color: black;
+}
+
+#contact-button a:hover {
+	color: white;
+}
+
+#contact-button:hover {
+	background-color: black;
 }
 
 .front-page-item {
@@ -306,6 +345,20 @@ body {
 header, footer {
 	text-align: center;
 }
+
+/* Button from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
+#contact-button {
+	font-size: 1.2em;	
+	text-align: center;
+}
+
+#contact-button a:hover {
+	color: white;
+}
+
+#contact-button:hover {
+	background-color: black;
+}
 	
 h1, h2, h3 {
 	text-align: center;
@@ -375,7 +428,7 @@ a.nav-link {
 	text-align: center;
 }
 
-footer p {
+footer > p {
 	font-size: 0.8em;
 }
 
@@ -430,6 +483,24 @@ aside {
 	
 .aside-title {
 	background: #f4d03f;
+}
+
+/* Button from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
+#contact-button {
+	background-color: #3C5725;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#contact-button a:hover {
+	color: white;
+}
+
+#contact-button:hover {
+	background-color: black;
 }
 
 .dash {
@@ -522,6 +593,10 @@ img {
 	
 	.search input[type=text] {
 		width: 12em;
+	}
+	
+	input[type=text], select, textarea {
+	width: 60%;
 	}
 
 	.header-search {
@@ -625,7 +700,7 @@ img {
   z-index: 99;
 }
 
-.topnav a {
+.topnav > a {
   float: left;
   display: block;
   color: #000000;
@@ -828,7 +903,7 @@ input[type=text], select, textarea {
 	width: 100%;
 	font-family: Forum, "Arial", sans-serif;
 	font-size: 1em;
-	padding: 12px;
+	padding: 4px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -854,31 +929,6 @@ input[type=submit]:hover {
 	border: 1px solid #cccccc;
 	background-color: #fbf9ee;
 	padding: 2em;
-}
-
-/* Contact Form from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
-#contact-button {
-	background-color: #3C5725;
-	border: none;
-	border-radius: 8px;
-	color: white;
-	padding: 0.5em 2em;
-	text-align: center;
-	text-decoration: none;
-	display: grid;
-	font-size: 1.2em;
-	margin: 2em auto 4em;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	width: 12em;
-}
-
-#contact-button a:hover {
-	color: white;
-}
-
-#contact-button:hover {
-	background-color: black;
 }
 
 /* Divider from https://codepen.io/airen/details/MWWOmEM */
