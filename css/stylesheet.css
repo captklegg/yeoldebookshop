@@ -40,7 +40,7 @@ nav, main, aside, footer {
 }
 
 header {
-	background-image: url("images/bookshelves.webp");
+	background-image: url("../images/bookshelves.webp");
 	background-position: center;
 	height: 285px;
 	margin: 0 auto;
@@ -95,6 +95,11 @@ aside {
 	width: 30px;
 	height: 2px;
 	margin: 0 auto 3em;
+}
+
+#fancy {
+	margin: 0 auto;
+	width: 60%;
 }
 
 .divider
