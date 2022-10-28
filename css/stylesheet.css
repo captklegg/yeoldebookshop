@@ -862,19 +862,15 @@ input[type=submit]:hover {
 	border: none;
 	border-radius: 8px;
 	color: white;
-	padding: 16px 32px;
+	padding: 0.5em 2em;
 	text-align: center;
 	text-decoration: none;
 	display: grid;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin: 2em auto 4em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	width: 12em;
-}
-
-#button a {
-	color: white;
 }
 
 #contact-button a:hover {
