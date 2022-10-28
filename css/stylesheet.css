@@ -1,4 +1,5 @@
 /* NOTE: CODE FROM OUTSIDE SOURCES STARTS AT LINE 608 */
+/* LINK TO W3C Schools CSS Validator: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyeoldebookshop.netlify.app%2Fcss%2Fstylesheet.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en */
 
 /* RESET */
 
@@ -723,8 +724,6 @@ img {
 	-webkit-line-clamp: var(--line-clamp);
 }
 
-
-
 /* Filter content */
 
 .filterDiv {
@@ -764,7 +763,6 @@ img {
 }
 
 /* Flip card */
-
 .scene {
 	display: inline-block;
 	width: 300px;
@@ -809,7 +807,6 @@ img {
 }
 
 /* Contact Form from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
-
 textarea {
 	font-size: 1em;
 	font-family: Forum, "Arial", sans-serif;
@@ -877,7 +874,6 @@ input[type=submit]:hover {
 }
 
 /* Divider from https://codepen.io/airen/details/MWWOmEM */
-
 .divider {
 	position: relative;
 	margin: 3em 0;
