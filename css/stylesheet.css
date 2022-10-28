@@ -287,6 +287,12 @@ video {
 
 
 /* TYPOGRAPHY */
+
+@font-face {
+   font-family: BodoniModa;
+   src: url("fonts/BodoniModa.woff2");
+}
+
 body {
 	font-family: Forum, sans-serif;
 	line-height: 1.5;
@@ -301,7 +307,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3, dropdown, dropbtn, nav, footer {
-	font-family: "Bodoni Moda", Arial, serif;
+	font-family: BodoniModa, Arial, serif;
 	font-weight: bold;
 }
 
