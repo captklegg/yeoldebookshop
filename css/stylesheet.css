@@ -848,7 +848,8 @@ input[type=submit]:hover {
 }
 
 /* Contact Form from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
-.button {
+#contact-button {
+	background-color: #3C5725;
 	border: none;
 	border-radius: 8px;
 	color: white;
@@ -856,26 +857,22 @@ input[type=submit]:hover {
 	text-align: center;
 	text-decoration: none;
 	display: grid;
-	font-size: 16px;
+	font-size: 1em;
 	margin: 2em auto 4em;
 	transition-duration: 0.4s;
 	cursor: pointer;
+	width: 12em;
 }
 
-.button a {
+#button a {
 	color: white;
 }
 
-.button a:hover {
+#contact-button a:hover {
 	color: white;
 }
 
-.button1 {
-	background-color: #3C5725; 
-	color: white; 
-}
-
-.button1:hover {
+#contact-button:hover {
 	background-color: black;
 }
 
