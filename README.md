@@ -1,2 +1,0 @@
-# yeoldebookshop
-Web dev project
