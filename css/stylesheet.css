@@ -50,8 +50,9 @@ header {
 }
 
 #header-search {
-	margin: 0 6em;
+	margin: 0 auto;
 	padding: 0;
+	width: 16em;
 }
 
 #search {
@@ -59,7 +60,7 @@ header {
 }
 
 header > input[type=text], select, textarea {
-	width: 60%;
+	width: 100%;
 	font-family: Forum, "Arial", sans-serif;
 	font-size: 1em;
 	padding: 4px;
@@ -591,6 +592,12 @@ img {
 		width: 100%;
     }
 	
+	#header-search {
+	margin: 0 6em;
+	padding: 0;
+	width: 14em;
+	}
+	
 	.search input[type=text] {
 		width: 12em;
 	}
@@ -599,7 +606,7 @@ img {
 	width: 60%;
 	}
 
-	.header-search {
+	#header-search {
 		width: 14rem;
 	}
 
@@ -607,9 +614,11 @@ img {
 		margin: 0 auto;
 	}
 
-	.header-social {
-		 width: 14rem;
+	#header-social {
+		 width: 12rem;
 	}
+	
+	
 
 	.social-icon {
 		 height: 45px;
@@ -660,7 +669,13 @@ img {
 
 	.header-search {
 		width: 25rem;
-}
+	}
+	
+	#header-search {
+	margin: 0 6em;
+	padding: 0;
+	width: 16em;
+	}
 
 	.logo {
 		margin: 0 auto;
