@@ -261,6 +261,7 @@ video {
 .header-search {
 	align-items: center;
 	justify-content: center;
+	width: 16em;
 }
 
 .header-logo {
@@ -271,6 +272,7 @@ video {
 .header-social {
 	align-items: center;
 	justify-content: center;
+	width: 16em;
 }
 
 .search input[type=text] {
