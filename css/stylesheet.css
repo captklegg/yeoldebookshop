@@ -227,9 +227,14 @@ aside {
 	margin-bottom: 4em;
 	}
 	
-.showcase-item-right, .showcase-item-left {
+.showcase-item-left {
     flex: 100%;
-  }
+}
+  
+.showcase-item-right {
+	text-align: center;
+    flex: 100%;
+}		
 
 .book-image {
 	display: inline-block;
@@ -672,7 +677,7 @@ img {
 	}
 
 	.showcase-item-left {
-		padding: 1em;
+		padding: 0;
 		flex: 50%;
 	}
 
