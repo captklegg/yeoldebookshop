@@ -41,6 +41,18 @@ nav, main, aside, footer {
 	padding: 1em;
 }
 
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	padding: 0 0.8rem;
+}
+
+nav a {
+	text-decoration: none;
+}
+
 header {
 	background-image: url("../images/bookshelves.webp");
 	background-position: center;
@@ -61,7 +73,7 @@ header {
 
 header > input[type=text], select, textarea {
 	width: 100%;
-	font-family: Forum, "Arial", sans-serif;
+	font-family: Forum, Arial, sans-serif;
 	font-size: 1em;
 	padding: 4px;
 	border: 1px solid #ccc;
@@ -95,15 +107,6 @@ nav {
 	z-index: 99;
 }
 
-main {
-	margin-top: 0;
-}
-
-aside {
-	margin: 1em 0 2em;	
-}
-
-/* Button from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
 #contact-button {
 	padding: 0.5em 2em;
 	display: grid;
@@ -111,6 +114,14 @@ aside {
 	transition-duration: 0.4s;
 	cursor: pointer;
 	width: 12em;
+}
+
+main {
+	margin-top: 0;
+}
+
+aside {
+	margin: 1em 0 2em;	
 }
 
 #contact-button a:hover {
@@ -165,6 +176,23 @@ aside {
 
 .padding-bottom {
 	padding-bottom: 2em;
+}
+
+/* Divider */
+.divider {
+	position: relative;
+	margin: 3em 0;
+	height: 1px;
+}
+
+.div-transparent:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
 }
 	
 /* Horizontal scroll */
@@ -331,17 +359,17 @@ video {
 /* TYPOGRAPHY */
 
 @font-face {
-   font-family: 'BodoniModa';
+   font-family: BodoniModa;
    src: url(../fonts/BodoniModa.woff2);
 }
 
 @font-face {
-   font-family: 'Forum';
+   font-family: Forum;
    src: url(../fonts/Forum.ttf);
 }
 
 body {
-	font-family: Forum, sans-serif;
+	font-family: Forum, serif;
 	line-height: 1.5;
 }
 	
@@ -479,6 +507,10 @@ nav {
 nav {
 	border-bottom: 1px solid #f1c40f;
 }
+
+.div-transparent:before {
+	background-image: linear-gradient(to right, transparent, rgb(157,159,161), transparent);
+}
 	
 aside {
 	border: 1px solid #f0f0f0;	
@@ -488,7 +520,7 @@ aside {
 	background: #f4d03f;
 }
 
-/* Button from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic */
+/* Contact button */
 #contact-button {
 	background-color: #3C5725;
 	border: none;
@@ -544,20 +576,6 @@ footer a {
 
 aside {
 	background: #fff;
-}
-
-
-/* NAVIGATION */
-nav ul {
-	list-style-type: none;
-}
-
-nav li {
-	padding: 0 0.8rem;
-}
-
-nav a {
-	text-decoration: none;
 }
 
 
@@ -910,7 +928,7 @@ img {
 	transform: rotateY(180deg);
 }
 
-/* Contact Form from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
+/* Contact Form  */
 textarea {
 	font-size: 1em;
 	font-family: Forum, "Arial", sans-serif;
@@ -946,22 +964,4 @@ input[type=submit]:hover {
 	border: 1px solid #cccccc;
 	background-color: #fbf9ee;
 	padding: 2em;
-}
-
-/* Divider from https://codepen.io/airen/details/MWWOmEM */
-.divider {
-	position: relative;
-	margin: 3em 0;
-	height: 1px;
-}
-
-.div-transparent:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(157,159,161), transparent);
 }
