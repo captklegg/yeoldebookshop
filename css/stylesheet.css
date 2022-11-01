@@ -578,6 +578,11 @@ aside {
 	background: #fff;
 }
 
+.aside-image {
+		margin: 0 auto;
+		width:60%;
+	}
+
 
 /* IMAGES & VIDEOS */
 
@@ -664,11 +669,6 @@ img {
 		 grid-row: 4 / 5;
     }
 
-	#author-image {
-		margin: 0 auto;
-		width:40%;
-	}	
-
 	footer {
 		grid-column: 1 / 6;
 		grid-row: 5 / 6;
@@ -722,9 +722,9 @@ img {
 		 grid-row: 3 / 4;
     }
 	
-	#author-image {
+	.aside-image {
 		margin: 0 auto;
-		width:60%;
+		width:90%;
 	}
 }
 
