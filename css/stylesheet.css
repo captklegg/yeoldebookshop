@@ -238,7 +238,14 @@ aside {
 .showcase-item-right {
 	text-align: center;
     flex: 100%;
-}		
+}	
+
+.arrivals-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;	
+}
 
 .book-image {
 	display: inline-block;
@@ -604,6 +611,40 @@ img {
 	padding-bottom: 1em;
 }
 
+@media screen and (max-width: 896px) {
+	
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+		padding: 5px 0;
+	}
+	.topnav a {  
+	font-size: 16px;
+	}
+
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+		color: green;
+		font-size: 16px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive a:hover {
+		color: green;
+	}
+	.nav-link {
+		line-height: 2.4em;
+	}
+}
+
+
 @media screen and (min-width: 896px) {	
 	/* For screen resolutions from 896px wide  */
     
@@ -788,40 +829,6 @@ img {
 
 .topnav .icon {
   display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-	padding: 5px 0;
-  }
-  .topnav a {  
-  font-size: 16px;
-}
-}
-
-@media screen and (max-width: 960px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    color: green;
-	font-size: 16px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive a:hover {
-	color: green;
-  }
-  .nav-link {
-    line-height: 2.4em;
-  }
 }
 
 /* Read more code from https://codepen.io/yassinedoghri/pen/QWpwoxp */
