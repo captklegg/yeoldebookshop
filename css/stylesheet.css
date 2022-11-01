@@ -612,6 +612,7 @@ img {
 }
 
 @media screen and (max-width: 896px) {
+	/* For screen resolutions less than 896px wide  */
 	
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
