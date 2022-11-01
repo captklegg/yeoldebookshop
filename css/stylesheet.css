@@ -226,6 +226,10 @@ aside {
 .featured-item {
 	margin-bottom: 4em;
 	}
+	
+.showcase-item-right, .showcase-item-left {
+    flex: 100%;
+  }
 
 .book-image {
 	display: inline-block;
@@ -641,9 +645,7 @@ img {
 
 	#header-social {
 		 width: 14rem;
-	}
-	
-	
+	}	
 
 	.social-icon {
 		 height: 45px;
@@ -663,6 +665,22 @@ img {
 		grid-column: 2 / 5;
 		grid-row: 3 / 4;
     }
+	
+	.showcase-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.showcase-item-left {
+		padding: 1em;
+		flex: 50%;
+	}
+
+	.showcase-item-right {
+		padding: 1em;
+		flex: 50%;
+		text-align: center;
+	}
  
 	aside {
 		 grid-column: 2 / 5;
