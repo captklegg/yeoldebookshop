@@ -79,19 +79,24 @@
 			
 			<div class="divider div-transparent"></div>
 			
-			<div id="myBtnContainer">
-				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-				<button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
-				<button class="btn" onclick="filterSelection('children')"> Children's Books</button>
-				<button class="btn" onclick="filterSelection('classics')"> Classics</button>
-				<button class="btn" onclick="filterSelection('crime')"> Crime</button>
-				<button class="btn" onclick="filterSelection('humour')"> Humour</button>
-				<button class="btn" onclick="filterSelection('NZ-authors')"> New Zealand Authors</button>
-				<button class="btn" onclick="filterSelection('sf')"> Science Fiction</button>
-				<button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
-				<button class="btn" onclick="filterSelection('women')"> Women Authors</button>
+			<div id="filterContainer">
+				<div class="arrivals-container">
+					<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					<button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
+					<button class="btn" onclick="filterSelection('children')"> Children</button>
+					<button class="btn" onclick="filterSelection('classics')"> Classics</button>
+					<button class="btn" onclick="filterSelection('crime')"> Crime</button>
+				</div>
+				<div class="arrivals-container">
+					<button class="btn" onclick="filterSelection('humour')"> Humour</button>
+					<button class="btn" onclick="filterSelection('NZ-authors')"> New Zealand</button>
+					<button class="btn" onclick="filterSelection('sf')"> Science Fiction</button>
+					<button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+					<button class="btn" onclick="filterSelection('women')"> Women Authors</button>
+				</div>
+				
 			</div>
-
+			<div class="dash"></div>
 			<div class="arrivals-container">
 				<!-- Filter script code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements -->
 				<div class="filterDiv classics">

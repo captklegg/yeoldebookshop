@@ -24,6 +24,7 @@ body {
 }
   
 @keyframes fadeInAnimation {
+	/* Page fade-in opacity */
     0% {
         opacity: 0;
     }
@@ -76,7 +77,6 @@ header > input[type=text], select, textarea {
 	padding: 4px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
@@ -317,7 +317,6 @@ video {
 .search input[type=text] {
 	padding: 6px;
 	border-radius: 4px;
-	font-size: 1em;
 	width: 80%;
 }
 	
@@ -367,7 +366,6 @@ input[type=text], select, textarea {
 	width: 100%;
 	padding: 4px;
 	border-radius: 4px;
-	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
@@ -403,6 +401,7 @@ input[type=submit]:hover {
 
 body {
 	font-family: Forum, serif;
+	font-size: 100%;
 	line-height: 1.5;
 }
 	
@@ -433,12 +432,12 @@ h1, h2, h3, dropdown, dropbtn, nav, footer {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2em;
 	margin-bottom: 0.5em;
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	margin-bottom: 1em;
 }
 
@@ -463,11 +462,11 @@ figcaption {
 }
 
 .topnav {
-	line-height: 14px;
+	line-height: 0.875em;
 }
 
 p, label {
-	font-size: 18px;
+	font-size: 1.125em;
 	margin-bottom: 1em;
 }
 
@@ -475,14 +474,6 @@ p.address {
 	line-height: 0.5;
 }
 	
-a {
-	font-size: 1em;
-}
-
-footer a {
-    font-size: 1em;
-}
-
 a.nav-link {
 	line-height: 2;
 }
@@ -519,13 +510,11 @@ figcaption {
 
 /* Contact form */
 textarea {
-	font-size: 1em;
-	font-family: Forum, "Arial", sans-serif;
+	font-family: Forum, Arial, sans-serif;
 }
 
 input[type=text], select, textarea {
 	font-family: Forum, "Arial", sans-serif;
-	font-size: 1em;
 }
 
 /* COLOUR SCHEME & BORDERS */
@@ -654,13 +643,13 @@ img {
 		padding: 5px 0;
 	}
 	.topnav a {  
-	font-size: 16px;
+	font-size: 1em;
 	}
 
 	.topnav.responsive {position: relative;}
 	.topnav.responsive .icon {
 		color: green;
-		font-size: 16px;
+		font-size: 1em;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -857,7 +846,7 @@ img {
 	text-align: center;
 	padding: 0 1em;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 .topnav a:hover {
@@ -939,8 +928,8 @@ img {
 	display: block;
 }
 
-.container {
-	margin-top: 2em;
+#filterContainer {
+	margin-bottom: 2em;
 	overflow: hidden;
 }
 
@@ -994,7 +983,7 @@ img {
 	color: white;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 2.5em;
 	backface-visibility: hidden;
 }
 
