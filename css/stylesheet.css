@@ -1,5 +1,7 @@
 /* LINK TO W3C Schools CSS Validator: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyeoldebookshop.netlify.app%2Fcss%2Fstylesheet.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en */
 /* Link to Nu Html Checker: https://validator.w3.org/nu/?doc=https%3A%2F%2Fyeoldebookshop.netlify.app%2F */
+/* USE SHIFT + F2 to jump between bookmarks */
+/* BOOKMARK LIST: LAYOUT --> HEADER --> NAV --> MAIN --> CONTACT FORM --> TYPOGRAPHY --> COLOUR SCHEME & BORDERS --> MEDIA QUERY MOBILE --> MEDIA QUERY TABLET --> MEDIA QUERY DESKTOP --> OUTSIDE CSS CODE
 
 /* RESET */
 
@@ -91,7 +93,7 @@ header > input[type=text], select, textarea {
 	margin: 0 5em;
 }
 
-#social-icon {
+.social-icon {
 	display: inline-block;
 	height: 35px;
 	margin: 0 0.5em;
@@ -203,7 +205,6 @@ aside {
 }
 
 /* Aside and Showcase items */
-
 .aside-title {
 	margin-bottom: 2em;
 }
@@ -627,7 +628,6 @@ input[type=submit] {
 }
 
 /* IMAGES */
-
 img {
 	width: 100%;
 	padding-bottom: 1em;
@@ -832,7 +832,7 @@ img {
 }
 
 
-/* CODE FROM ONLINE SOURCES */
+/* CODE FROM OUTSIDE SOURCES */
 /* Responsive nav menu from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
 .topnav {
 	overflow: hidden;
@@ -893,7 +893,6 @@ img {
 	text-decoration: underline;
 }
 
-/* Don't forget focus and hover styles for accessibility! */
 .read-more__checkbox:focus ~ .read-more__label {
 	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
@@ -915,7 +914,7 @@ img {
 	-webkit-line-clamp: var(--line-clamp);
 }
 
-/* Filter content */
+/* Filter content from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements */
 .filterDiv {
 	float: left;
 	background-color: #ffffff;
@@ -997,7 +996,6 @@ img {
 }
 
 /* Divider from https://codepen.io/Oddgson/pen/VPrYbv */
-
 .div-transparent:before {
 	background-image: linear-gradient(to right, transparent, rgb(157,159,161), transparent);
 }
