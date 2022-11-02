@@ -45,9 +45,7 @@
 		<header>
 			<div class="row">
 				<div id="header-search">
-					<div id="search">
-						<input type="text" placeholder="Search..." aria-label="Search...">
-					</div>
+					<input type="text" class="search-input" placeholder="Search..." aria-label="Search this website">
 				</div>
 				<div class="header-logo">
 					<div class="logo">
@@ -81,19 +79,19 @@
 				<form action="https://formsubmit.co/0b20b3250970e26bf947062cc01e699c" method="POST" />
 					<div>
 						<label class="label-title" for="fname">First Name (required)</label>
-						<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+						<input type="text" class="contact-input" id="fname" name="firstname" placeholder="Your name.." required>
 					</div>
 					<div>
 						<label class="label-title" for="lname">Last Name (required)</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+						<input type="text" class="contact-input" id="lname" name="lastname" placeholder="Your last name.." required>
 					</div>
 					<div>
 						<label class="label-title" for="lname">Email (required)</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your email address.." required>
+						<input type="text" class="contact-input" id="lname" name="lastname" placeholder="Your email address.." required>
 					</div>
 					<div>
 						<label class="label-title" for="country">Country</label>
-						<select id="country" name="country">
+						<select id="country" class="contact-input" name="country">
 							<option value="Afghanistan">Afghanistan</option>
 							<option value="Albania">Albania</option>
 							<option value="Algeria">Algeria</option>
@@ -336,7 +334,7 @@
 					</div>						
 					<div>
 						<label class="label-title" for="request">What can we do for you?</label>
-						<select id="request" name="request">
+						<select class="contact-input" id="request" name="request">
 							<option value="enquiry">I have a book enquiry</option>	
 							<option value="valuation">I would like a valuation</option>
 							<option value="restore">I would like a book restored</option>	

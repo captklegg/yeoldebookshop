@@ -68,23 +68,18 @@ header {
 	width: 16em;
 }
 
-#search {
-	margin: 0 0.5em;
-}
-
 header > input[type=text], select, textarea {
 	width: 100%;
 	font-family: Forum, Arial, sans-serif;
 	font-size: 1em;
 	padding: 4px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
 }
 
-.logo {
+#logo {
 	margin: 0 auto;
 	width: 250px;
 }
@@ -275,7 +270,7 @@ aside {
 
 #about-us-image {
 	margin: 0 auto;
-	width:150px;
+	width:300px;
 }
 
 .label-title {
@@ -304,7 +299,7 @@ video {
 	width: 16em;
 }
 
-.header-logo {
+#header-logo {
 	align-items: center;
 	justify-content: center;
 }
@@ -365,12 +360,23 @@ video {
 /* Contact Form  */	
 input[type=text], select, textarea {
 	width: 100%;
-	padding: 4px;
+	padding: 0 1em;
+	resize: vertical;
+}
+
+.search-input {	
+	border-radius: 50px;
+	height: 2.5em;
+	padding: 0 2em;
+	outline: none;
+}
+
+.contact-input {	
 	border-radius: 4px;
 	margin-top: 6px;
 	margin-bottom: 16px;
-	resize: vertical;
 }
+	
 
 input[type=submit] {
 	padding: 12px 20px;
@@ -408,6 +414,10 @@ body {
 	
 header, footer {
 	text-align: center;
+}
+
+input, input::-webkit-input-placeholder {
+    font-size: 1em;
 }
 
 #contact-button {
@@ -630,7 +640,6 @@ input[type=submit] {
 /* IMAGES */
 img {
 	width: 100%;
-	padding-bottom: 1em;
 }
 
 @media screen and (max-width: 896px) {
@@ -667,7 +676,16 @@ img {
 	}
 	
 	header {
-		height: 285px;
+		height: 280px;
+	}
+	
+	#header-search {	
+		margin: 0 auto;
+		padding: 0.5em 0;
+	}
+	
+	#header-social {	
+		padding: 0.5em 0;
 	}
 }
 
@@ -792,10 +810,11 @@ img {
 
 	.header-search {
 		width: 25rem;
+		height: 2.5em;
 	}
 	
 	#header-search {
-	margin: 0 6em;
+	margin: 0 6em 0 0;
 	padding: 0;
 	width: 14em;
 	}
