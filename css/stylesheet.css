@@ -393,7 +393,6 @@ input[type=submit]:hover {
 	padding: 2em;
 }
 
-
 /* TYPOGRAPHY */
 
 @font-face {
@@ -617,11 +616,6 @@ aside {
 	background: #fff;
 }
 
-.aside-image {
-		margin: 0 auto;
-		width:30%;
-}
-
 /* Contact form */
 .contact-container {
 	border: 1px solid #cccccc;
@@ -635,12 +629,18 @@ input[type=text], select, textarea {
 input[type=submit] {	
 	color: white;
 	background-color: #3C5725;
+	border-radius: 8px;
 }
 
 /* IMAGES */
 img {
 	width: 100%;
 }
+	
+.aside-image {
+	margin: 0 auto;
+	width:80%;
+	}
 
 @media screen and (max-width: 896px) {
 	/* For screen resolutions less than 896px wide  */
@@ -688,7 +688,6 @@ img {
 		padding: 0.5em 0;
 	}
 }
-
 
 @media screen and (min-width: 896px) {	
 	/* For screen resolutions from 896px wide  */
@@ -784,11 +783,6 @@ img {
 		 grid-column: 2 / 5;
 		 grid-row: 4 / 5;
     }
-	
-	.aside-image {
-		margin: 0 auto;
-		width:40%;
-}
 
 	footer {
 		grid-column: 1 / 6;
@@ -843,11 +837,6 @@ img {
 		 grid-column: 3 / 4;
 		 grid-row: 3 / 4;
     }
-	
-	.aside-image {
-		margin: 0 auto;
-		width:80%;
-	}
 }
 
 
@@ -1026,5 +1015,4 @@ img {
 	right: 5%;
 	width: 90%;
 	height: 1px;
-}
-	
+}	
