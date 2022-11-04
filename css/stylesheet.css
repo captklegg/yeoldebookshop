@@ -483,6 +483,10 @@ p, label {
 p.address {
 	line-height: 0.5;
 }
+
+.name_title {
+	font-weight: 700;
+}
 	
 a.nav-link {
 	line-height: 2;
@@ -525,6 +529,14 @@ textarea {
 
 input[type=text], select, textarea {
 	font-family: Forum, "Arial", sans-serif;
+}
+
+.bold_title {
+	font-weight: 700;
+}
+
+.text_italic {
+	font-style: italic;
 }
 
 /* COLOUR SCHEME & BORDERS */
