@@ -81,21 +81,10 @@
 				<p>We have a first edition copy of this wonderful book in stock. It is in VG condition, and has the letter "A" printed on the copyright page, as well as the Scribner seal, meaning it
 				is a genuine first edition book.</p>
 				<p>Price - NZ$8,900</p>
-				<div class="flex-flipcard-container">
-					<div class="scene scene--card">
-					  <div class="card">
-						<div class="card__face card__face--front">
-							<figure>
-								<img src="images/books/other/the-old-man-and-the-sea-cover.webp" alt="The Old Man and the Sea book cover">
-							</figure>
-						</div>
-						<div class="card__face card__face--back">
-							<figure>
-								<img src="images/books/other/the-old-man-and-the-sea-back.webp" alt="The Old Man and the Sea book rear cover">
-							</figure>
-						</div>
-					</div>
-					<figcaption>Click to turn the book over</figcaption>
+				<figure id="book-cover">
+					<img src="images/books/other/the-old-man-and-the-sea-cover.webp" alt="The Old Man and the Sea book cover">
+				</figure>				
+				<figcaption>First edition cover</figcaption>
 				</div>
 			</div>
 			<div class="front-page-item">
@@ -131,15 +120,5 @@
 		<footer>
 			<p class="small">&copy; Copyright 2022 Ye Olde Bookshop | <a href="privacy.html">Privacy Policy</a></p>
 		</footer>
-		
-		<!-- Flip card script from https://codepen.io/mondal10/pen/WNNEvjV -->
-		<script>
-			var cards = document.querySelectorAll('.card');
-			[...cards].forEach((card)=>{
-				card.addEventListener( 'click', function() {
-				card.classList.toggle('is-flipped');
-				});
-			});
-		</script>
 	</body>
 </html>

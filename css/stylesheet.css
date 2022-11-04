@@ -272,6 +272,17 @@ aside {
 	margin: 0 auto;
 	width:300px;
 }
+	
+.aside-image {
+	margin: 0 auto;
+	width:80%;
+}
+
+#book-cover {
+	margin: 0 auto;
+	width:50%;
+	text-align: center;
+}
 
 .label-title {
 	font-weight: 700;
@@ -648,11 +659,6 @@ input[type=submit] {
 img {
 	width: 100%;
 }
-	
-.aside-image {
-	margin: 0 auto;
-	width:80%;
-	}
 
 @media screen and (max-width: 896px) {
 	/* For screen resolutions less than 896px wide  */
@@ -849,6 +855,12 @@ img {
 		 grid-column: 3 / 4;
 		 grid-row: 3 / 4;
     }
+	
+	#book-cover {
+	margin: 0 auto;
+	width:40%;
+	text-align: center;
+	}
 }
 
 
@@ -969,50 +981,6 @@ img {
 	background-color: #ffffe6;
 	border: 1px solid #3C5725;
 	color: #3C5725;
-}
-
-/* Flip card */
-.scene {
-	display: inline-block;
-	width: 300px;
-	height: 425px;
-	margin: 40px 0;
-	perspective: 600px;
-}
-
-.card {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	transform-style: preserve-3d;
-	transform-origin: center right;
-	transition: transform 1s;
-}
-
-.card.is-flipped {
-	transform: translateX(-100%) rotateY(-180deg);
-}
-
-.card__face {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	line-height: 260px;
-	color: white;
-	text-align: center;
-	font-weight: bold;
-	font-size: 2.5em;
-	backface-visibility: hidden;
-}
-
-.card__face--front {
-	background: crimson;
-}
-
-.card__face--back {
-	background: slateblue;
-	transform: rotateY(180deg);
 }
 
 /* Divider from https://codepen.io/Oddgson/pen/VPrYbv */
