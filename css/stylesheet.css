@@ -1,5 +1,5 @@
-/* LINK TO W3C Schools CSS Validator: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyeoldebookshop.netlify.app%2Fcss%2Fstylesheet.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en */
-/* Link to Nu Html Checker: https://validator.w3.org/nu/?doc=https%3A%2F%2Fyeoldebookshop.netlify.app%2F */
+/* LINK TO W3C Schools CSS Validator: shorturl.at/hIP35 */
+/* Link to Nu Html Checker: shorturl.at/bhrD1 */
 /* USE SHIFT + F2 to jump between bookmarks */
 /* BOOKMARK LIST: LAYOUT --> HEADER --> NAV --> MAIN --> CONTACT FORM --> TYPOGRAPHY --> COLOUR SCHEME & BORDERS --> MEDIA QUERY MOBILE --> MEDIA QUERY TABLET --> MEDIA QUERY DESKTOP --> OUTSIDE CSS CODE
 
@@ -178,11 +178,6 @@ aside {
 	position: relative;
 	margin: 3em 0;
 	height: 1px;
-}
-
-/* Hide bottom divider on mobile screens for page continuity  */
-.divider-bottom {
-	display: none;
 }
 
 /* Horizontal scroll */
@@ -699,6 +694,11 @@ img {
 	
 	#header-social {	
 		padding: 0.5em 0;
+	}
+
+	/* Hide bottom divider on mobile and tablet screens for page continuity  */
+	.divider-bottom {
+		display: none;
 	}
 }
 
