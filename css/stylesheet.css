@@ -724,7 +724,7 @@ img {
     }
 	
 	header {
-	/* Flex header conatining the image and title. */
+	/* Flex header containing the image and title. */
 		display: flex;
 		height: 250px;
 		grid-column: 1 / 6;
